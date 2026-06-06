@@ -17,7 +17,7 @@
 
 # 🇧🇷 Português
 
-## Registro público de autoria e prioridade
+## Registro público de autoria e prioridade.
 
 Este repositório estabelece um registro público e datado do nome **BEORYS™** e da
 obra originária por trás dele. É publicado como questão de prioridade de autoria
@@ -129,4 +129,4 @@ Ver / see [`LICENSE`](./LICENSE).
 
 **"BEORYS"** e **"BEORYS™"** são reivindicadas como marcas de Roberta Sarra
 España. / **"BEORYS"** and **"BEORYS™"** are claimed as trademarks of Roberta
-Sarra España.
+Sarra España. 
