@@ -48,7 +48,7 @@ Isso é o que o princípio BEORYS™ codifica:
 - Os critérios operacionais do verificador
 - Qualquer dado individual (por caso, por modelo, por output)
 
-Esses elementos são segredo industrial — ver [(../legal/TRADE_SECRET.md)](../legal/(../legal/TRADE_SECRET.md))).
+Esses elementos são segredo industrial — ver [TRADE_SECRET.md](../legal/TRADE_SECRET.md).
 
 ---
 
