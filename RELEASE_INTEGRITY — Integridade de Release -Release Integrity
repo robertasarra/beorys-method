@@ -1,0 +1,78 @@
+# RELEASE_INTEGRITY — Integridade de Release / Release Integrity
+
+| | |
+|---|---|
+| **Obra / Work** | BEORYS™ |
+| **Autora / Author** | Roberta Sarra España |
+| **Registro público / Public record** | 2026-06-06 |
+
+---
+
+# 🇧🇷 Português
+
+## 1. Integridade documental
+
+Cada **release** deste registro público é um conjunto coerente de documentos cujo
+estado exato é fixado por hashes SHA-256 (ver [`HASH_POLICY.md`](./HASH_POLICY.md) e
+[`SHA256_REGISTRY.md`](./SHA256_REGISTRY.md)). A integridade documental significa
+que, para uma dada versão, **é possível provar** que cada documento corresponde,
+byte a byte, ao que foi registrado.
+
+## 2. Snapshots públicos
+
+Um **snapshot público** é o conjunto dos documentos públicos em um ponto no tempo,
+identificado por:
+
+- a **versão** correspondente no [`CHANGELOG.md`](../CHANGELOG.md);
+- a **data** de registro (fuso de Brasília);
+- o **registro de hashes** vigente naquela versão.
+
+Snapshots não contêm implementação: seguem a fronteira de
+[`TRADE_SECRET.md`](../TRADE_SECRET.md). Quando um snapshot referencia o benchmark,
+referencia apenas os **resultados agregados** e, quando aplicável, o **hash-mestre**
+do run — nunca os dados brutos.
+
+## 3. Versionamento
+
+O versionamento do **registro público** é independente do versionamento da **obra**:
+
+- a obra (livro + toolkit) tem o seu próprio ciclo, **não publicado** aqui;
+- este registro segue versões `MAJOR.MINOR.PATCH` simplificadas, descritas no
+  [`CHANGELOG.md`](../CHANGELOG.md);
+- cada versão tem data e escopo próprios; nenhuma versão sobrescreve silenciosamente
+  a anterior.
+
+## 4. Preservação de evidência histórica
+
+A evidência histórica é **preservada**, não substituída:
+
+- versões anteriores permanecem no histórico do repositório;
+- correções são registradas como **novas entradas** no CHANGELOG, descrevendo o que
+  mudou e por quê — nunca como reescrita silenciosa do passado;
+- os resultados agregados do benchmark, uma vez publicados para uma versão, são
+  **datados**; uma medição posterior (ex.: v0.3) é apresentada como **nova
+  medição**, sem apagar a anterior.
+
+Esse princípio garante que a **prioridade pública** e a **rastreabilidade** da obra
+permaneçam verificáveis ao longo do tempo.
+
+---
+
+# 🌎 English (short version)
+
+Each **release** of this public record is a coherent set of documents whose exact
+state is fixed by SHA-256 hashes (see [`HASH_POLICY.md`](./HASH_POLICY.md) and
+[`SHA256_REGISTRY.md`](./SHA256_REGISTRY.md)). A **public snapshot** is the set of
+public documents at a point in time, identified by its `CHANGELOG` version, its date
+(Brasília time), and the hash registry then in force; snapshots carry no
+implementation and, for the benchmark, reference only **aggregate** results and,
+where applicable, the run's **master hash**. Versioning of the **public record** is
+independent of the **work's** own (unpublished) versioning. Historical evidence is
+**preserved, not overwritten**: prior versions remain in history, corrections are new
+CHANGELOG entries, and a later measurement (e.g., v0.3) is presented as a **new
+measurement** without erasing the earlier one — keeping public priority and
+traceability verifiable over time.
+
+---
+
+© 2026 Roberta Sarra España — BEORYS™. Ver [`LICENSE`](../LICENSE).
