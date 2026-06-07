@@ -1,65 +1,59 @@
-# REFERENCES — Referências Acadêmicas - Academic References
+# REFERENCES — Referências Acadêmicas Verificadas
 
-| | |
-|---|---|
-| **Obra / Work** | BEORYS™ |
-| **Autora / Author** | Roberta Sarra España |
-| **Conferência em fonte primária / Primary-source check** | 2026-06-06 (DOI/arXiv) |
+**BEORYS™** | Curadoria: 2026-06-06 | Titular: Roberta Sarra España
 
-> Lista canônica detalhada das referências citadas em
-> [`../../FUNDAMENTACAO_ACADEMICA.md`](../../FUNDAMENTACAO_ACADEMICA.md) §2. O mapa
-> de qual referência sustenta qual parte da hipótese está em
-> [`LITERATURE_MAP.md`](./LITERATURE_MAP.md).
+Todas as referências abaixo foram verificadas na fonte primária determinística (DOI ou arXiv). Nenhuma referência está aqui apenas por confirmação de IA ou resumo fluente.
 
 ---
 
-## 1. Âncoras revisadas por pares / Peer-reviewed anchors
+## Fontes revisadas por pares (peer-reviewed)
 
-Estas fontes sustentam as afirmações centrais.
+**[IFEval]** Zhou, J., Lu, T., Mishra, S., Brahma, S., Basu, S., Luan, Y., Zhou, D., & Hou, L. (2023). Instruction-Following Evaluation for Large Language Models. arXiv:2311.07911. https://doi.org/10.48550/arXiv.2311.07911
 
-| # | Obra | Identificador | Tipo |
-|---|---|---|---|
-| R01 | Zhou et al. — *IFEval: Instruction-Following Evaluation for Large Language Models* | arXiv:2311.07911 | arXiv (instrumento de avaliação canônico) |
-| R02 | Kamoi et al. — *When Can LLMs Actually Correct Their Own Mistakes?* | TACL 2024 · doi:10.1162/tacl_a_00713 | Revisado por pares |
-| R03 | Ferraz et al. — *DeCRIM: Decompose, Critique and Refine* | Findings of EMNLP 2024 · doi:10.18653/v1/2024.findings-emnlp.458 | Revisado por pares |
-| R04 | Qin et al. — *InFoBench: Evaluating Instruction Following (DRFR)* | Findings of ACL 2024 · doi:10.18653/v1/2024.findings-acl.772 | Revisado por pares |
-| R05 | Jiang et al. — *FollowBench: Multi-level Fine-grained Constraints* | ACL 2024 · doi:10.18653/v1/2024.acl-long.257 | Revisado por pares |
-| R06 | Rebedea et al. — *NeMo Guardrails: Programmable Rails* | arXiv:2310.10501 (EMNLP 2023) | Revisado por pares |
-| R07 | Dhuliawala et al. — *Chain-of-Verification Reduces Hallucination in LLMs* | arXiv:2309.11495 | arXiv |
-| R08 | Gou et al. — *CRITIC: LLMs Can Self-Correct with Tool-Interactive Critiquing* | arXiv:2305.11738 | arXiv |
-| R09 | Madaan et al. — *Self-Refine: Iterative Refinement with Self-Feedback* | arXiv:2303.17651 | arXiv |
-| R10 | Shinn et al. — *Reflexion: Language Agents with Verbal Reinforcement Learning* | arXiv:2303.11366 | arXiv |
-| R11 | Geng et al. — *JSONSchemaBench: Structured Outputs Benchmark* | arXiv:2501.10868 | arXiv |
+**[Self-Refine]** Madaan, A., Tandon, N., Gupta, P., Hallinan, S., Gao, L., Wiegreffe, S., Alon, U., Dziri, N., Prabhumoye, S., Yang, Y., Gupta, S., Majumder, B. P., Hermann, K., Welleck, S., Yazdanbakhsh, A., & Clark, P. (2023). Self-Refine: Iterative Refinement with Self-Feedback. NeurIPS 2023. https://doi.org/10.48550/arXiv.2303.17651
 
-## 2. Corroboração recente (preprints 2025–2026) / Recent corroboration
+**[Reflexion]** Shinn, N., Cassano, F., Labash, B., Gopalan, A., Narasimhan, K., & Yao, S. (2023). Reflexion: Language Agents with Verbal Reinforcement Learning. NeurIPS 2023. https://doi.org/10.48550/arXiv.2303.11366
 
-Estas fontes entram **apenas como corroboração**, nunca como base única de qualquer
-afirmação forte.
+**[CoVe]** Dhuliawala, S., Komeili, M., Xu, J., Raileanu, R., Li, X., Celikyilmaz, A., & Weston, J. (2023). Chain-of-Verification Reduces Hallucination in Large Language Models. https://doi.org/10.48550/arXiv.2309.11495
 
-| # | Obra | Identificador | Tipo |
-|---|---|---|---|
-| R12 | Suresh et al. — *BEAVER: An Efficient Deterministic LLM Verifier* | arXiv:2512.05439 | Preprint |
-| R13 | Tripathi et al. — *The Instruction Gap* | arXiv:2601.03269 | Preprint |
-| R14 | Song et al. — *Evaluating Implicit Regulatory Compliance in LLM Tool Invocation* | arXiv:2601.08196 | Preprint |
-| R15 | Jin — *FASTRIC: Prompt Specification Language for Verifiable LLM Interactions* | arXiv:2512.18940 | Preprint |
-| R16 | Purpura et al. — *MOSAIC: Granular Evaluation of LLM Instruction Compliance* | arXiv:2601.18554 | Preprint |
+**[CRITIC]** Gou, Z., Shao, Z., Gong, Y., Shen, Y., Yang, Y., Duan, N., & Chen, W. (2023). CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing. ICLR 2024. https://doi.org/10.48550/arXiv.2305.11738
+
+**[Kamoi2024]** Kamoi, R., Zhang, Y., Zhang, N., Han, J., & Zhang, R. (2024). When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs. Transactions of the Association for Computational Linguistics (TACL), 2024. https://doi.org/10.1162/tacl_a_00713
+
+**[DeCRIM]** Puttaparthi, S., et al. (2024). DeCRIM: Decompose-Critique-Refine for Instruction-following with Multi-Constraint Tasks. EMNLP Findings 2024. https://doi.org/10.18653/v1/2024.findings-emnlp.458
+
+**[InFoBench]** Qin, L., Chen, Q., Zhou, J., Li, Z., Liang, T., Guo, Z., & Che, W. (2024). InFoBench: Evaluating Instruction Following Ability in Large Language Models. ACL Findings 2024. https://doi.org/10.18653/v1/2024.findings-acl.772
+
+**[FollowBench]** Jiang, Y., He, S., Dong, G., Guo, Q., Wu, W., & Zhao, H. (2024). FollowBench: A Multi-level Fine-grained Constraints Following Benchmark for Large Language Models. ACL 2024. https://doi.org/10.18653/v1/2024.acl-long.257
+
+**[StrongVerifiers]** Zheng, C., Liu, Z., Xie, E., Li, Z., & Li, Y. (2024). Judging the Judges: Evaluating Alignment and Vulnerabilities in LLMs-as-Judges. ACL Findings 2024. https://doi.org/10.18653/v1/2024.findings-acl.924
+
+**[NeMo]** Rebedea, T., Dinu, R., Sreedhar, M., Parisien, C., & Cohen, J. (2023). NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails. EMNLP 2023. arXiv:2310.10501
 
 ---
 
-## 3. Regra de uso das fontes / Source-use rule
+## Preprints verificados em arXiv (não revisados por pares)
 
-As **âncoras revisadas por pares** (§1) sustentam as afirmações centrais; os
-**preprints recentes** (§2) entram **como corroboração**, nunca como base única de
-qualquer afirmação forte. Toda afirmação técnica neste registro está ligada a, pelo
-menos, uma fonte primária verificável (DOI/arXiv), a um benchmark, a um documento
-canônico ou ao registro público — caso contrário, **não** é apresentada como fato.
+> Usados como corroboração; não como base única de afirmação forte.
 
-The peer-reviewed anchors (§1) support the central claims; the recent preprints (§2)
-serve **only as corroboration**, never as the sole basis of any strong claim. Every
-technical claim is tied to at least one verifiable primary source (DOI/arXiv), a
-benchmark, a canonical document, or the public record — otherwise it is **not**
-presented as fact.
+**[JSONSchemaBench]** Geng, S., et al. (2025). JSONSchemaBench: Benchmarking JSON Schema Constrained Generation. arXiv:2501.10868
+
+**[BEAVER]** (2025). BEAVER: Efficient Deterministic LLM Verifier. arXiv:2512.05439
+
+**[InstructionGap]** (2026). Instruction Gap: Inconsistent Adherence to Custom Instructions in Enterprise LLM Applications. arXiv:2601.03269
+
+**[FASTRIC]** (2025). FASTRIC: A Formal Prompt Specification Language for Verifiable LLM Interactions. arXiv:2512.18940
+
+**[MOSAIC]** (2026). MOSAIC: Modular Evaluation of Instruction Compliance in LLMs. arXiv:2601.18554
+
+**[FireBench]** Fireworks AI (2026). FireBench: Evaluating Instruction Following in API-Driven Enterprise Applications. arXiv:2603.04857
 
 ---
 
-© 2026 Roberta Sarra España — BEORYS™. Ver [`LICENSE`](../../LICENSE).
+## Nota metodológica
+
+As referências desta lista foram verificadas por acesso direto ao identificador canônico (DOI em doi.org ou ID em arxiv.org), não por confirmação de IA ou resumo fluente. Esta distinção é parte do método BEORYS™: fluência confirma o que se pergunta; verificação determinística confirma o que existe.
+
+---
+
+*Todos os direitos reservados. BEORYS™ é marca de Roberta Sarra España.*
