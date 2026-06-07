@@ -134,11 +134,11 @@ publicadas: um livro e um toolkit profissional que o acompanha. Ambos são obras
 finalizadas de titularidade da autora. **Nenhuma das duas foi publicada ou
 lançada.**
 
-### 7.1 Lacuna acadêmica confirmada
+### 7.1 Lacuna identificada na literatura
 
 Uma revisão da literatura acadêmica atual sobre governança e conformidade de
 modelos de linguagem de grande porte — reunida e conferida em fonte primária
-(DOI/arXiv) no corpo de referências da **§7.2** — confirma uma lacuna estrutural
+(DOI/arXiv) no corpo de referências da **§7.2** — aponta para uma lacuna estrutural
 que a obra endereça: as abordagens vigentes tratam a confiabilidade como uma
 qualidade a ser obtida de um sistema fluente, e não como uma propriedade imposta
 por uma verificação externa ao sistema verificado.
@@ -190,9 +190,10 @@ apenas o método de instrução, nunca o critério (desenho anti-circular).
 
 **Conclusão empírica.** Medida de forma justa, a *compliance bruta da primeira
 saída converge* (~92%–95%) em todos os métodos: a fluência, sozinha, já produz
-texto que **se lê** como conforme. Em outras palavras, os modelos **já conhecem a
-regra** — a compliance aparente da prosa iguala a do BEORYS™; o método não amplia
-esse conhecimento, ele garante a sua **execução**. A diferença do BEORYS™ não está
+texto que **se lê** como conforme. Em outras palavras, os modelos avaliados
+**apresentaram evidência de conhecimento suficiente das regras testadas** — a
+compliance aparente da prosa iguala a do BEORYS™ nas condições medidas; o método
+não amplia esse conhecimento, ele **impõe** a sua **execução**. A diferença do BEORYS™ não está
 na redação, e sim na **autorização** — exatamente o que o método sustenta. Sob as
 métricas pré-registradas, a condição E se separa das demais:
 
@@ -202,7 +203,7 @@ métricas pré-registradas, a condição E se separa das demais:
   (0%), enquanto o validador-LLM (D) aprovou 2% das saídas inválidas;
 - **auditabilidade (0–1):** a maior de todas (0,83 contra 0,60 da prosa).
 
-Este é o resultado empírico direto da lacuna que a obra preenche: a prosa atinge
+Os resultados observados são consistentes com a lacuna que a obra endereça: a prosa atinge
 alta compliance aparente e, ainda assim, quase nunca aciona a verificação, deixa
 passar saída não-autorizada e não é auditável. A confiabilidade não emerge da
 fluência, mas de uma verificação externa, determinística e de falha-fechada. **Em
@@ -367,7 +368,7 @@ The work named BEORYS™ exists, as of the date above, in two complete and
 unpublished forms: a book and an accompanying professional toolkit. Both are
 finished works held by the author. **Neither has been published or released.**
 
-### 7.1 Confirmed academic gap
+### 7.1 Gap identified in the literature
 
 A review of the current academic literature on the governance and compliance of
 large language models — gathered and verified against primary sources (DOI/arXiv)
@@ -404,9 +405,10 @@ method, never the criterion (anti-circular design).
 
 **Empirical conclusion.** Measured fairly, *raw first-output compliance converges*
 (~92%–95%) across all methods: fluency alone already produces text that **reads** as
-compliant. In other words, the models **already know the rule** — prose's apparent
-compliance equals BEORYS™'s; the method does not increase that knowledge, it
-enforces its **execution**. The BEORYS™ difference is not in the drafting but in the
+compliant. In other words, the evaluated models **showed evidence of sufficient
+knowledge of the rules tested** — prose's apparent compliance equals BEORYS™'s under
+the measured conditions; the method does not increase that knowledge, it enforces its
+**execution**. The BEORYS™ difference is not in the drafting but in the
 **authorization** — exactly what the method asserts. On the pre-registered metrics,
 condition E separates from the rest:
 
@@ -416,7 +418,7 @@ condition E separates from the rest:
   the LLM validator (D) approved 2% of invalid outputs;
 - **auditability (0–1):** the highest of all (0.83 vs 0.60 for prose).
 
-This is direct empirical evidence of the gap the work fills: prose reaches high
+These observations are consistent with the gap the work addresses: prose reaches high
 apparent compliance yet almost never triggers verification, lets unauthorized
 output through, and is not auditable. Reliability does not emerge from fluency, but
 from external, deterministic, fail-closed verification. **In short: the method does
@@ -449,3 +451,4 @@ priority of its public date.
 Author and originator of BEORYS™ · Brazil, 2026
 
 > *Because Knowledge Should Not Be Ephemeral.*
+
