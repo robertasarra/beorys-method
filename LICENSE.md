@@ -1,61 +1,47 @@
-All Rights Reserved / Todos os Direitos Reservados
+BEORYS™ PROPRIETARY NOTICE
 
-Copyright (c) 2026 Roberta Sarra España
+Copyright (c) 2026 Roberta Sarra España. All rights reserved.
 
---------------------------------------------------------------------------------
-ENGLISH
---------------------------------------------------------------------------------
+BEORYS™ and all associated materials in this repository — including but not
+limited to: name, trademark, methodology, architecture, principles, academic
+documentation, benchmark results, and any derivative works — are the exclusive
+intellectual property of Roberta Sarra España.
 
-BEORYS™, together with all associated materials, names, and works referred to in
-this repository, is the exclusive property of Roberta Sarra España.
+TERMS OF USE FOR THIS REPOSITORY:
 
-No part of this repository, and no work it refers to, may be used, reproduced,
-copied, modified, adapted, translated, distributed, transmitted, displayed,
-published, sublicensed, or exploited in any form or by any means, in whole or in
-part, without the prior express written permission of the copyright holder.
+1. PERMITTED USES (without prior written authorization):
+   - Reading and sharing this repository as a public record of authorship
+     and priority.
+   - Citing the aggregated benchmark results with proper attribution to
+     Roberta Sarra España and a link to this repository.
+   - Referencing this work in academic bibliographies using the CITATION.cff
+     format.
 
-No license, right, title, or interest of any kind is granted, whether by
-implication, estoppel, or otherwise, except as expressly set out in a separate
-written agreement signed by the copyright holder. This includes, without
-limitation, any right to use the work for commercial or non-commercial purposes,
-to create derivative works, or to incorporate any portion of it into other works.
+2. PROHIBITED USES (require prior written authorization from the rights holder):
+   - Reproducing, distributing, or transmitting any part of the BEORYS™
+     methodology.
+   - Implementing, adapting, or creating derivative works based on the
+     principles, architecture, or criteria described herein.
+   - Using the name BEORYS™ or any variation to identify products, services,
+     or research.
+   - Extracting, inferring, or reconstructing protected components from the
+     public documents in this repository.
+   - Commercial exploitation of any element of the methodology.
 
-"BEORYS" and "BEORYS™" are claimed as trademarks of Roberta Sarra España.
+3. NO (LICENSE.md) GRANTED:
+   The publication of this repository does not grant any license to use,
+   reproduce, implement, adapt, or commercially exploit the BEORYS™
+   methodology or any of its components.
 
-THE CONTENTS OF THIS REPOSITORY ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
-KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO
-EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
-OUT OF, OR IN CONNECTION WITH THE CONTENTS OR THEIR USE.
+4. TRADE SECRETS:
+   The absence of source code, scripts, prompts, dataset, and operational
+   criteria from this repository is a deliberate trade secret protection
+   decision — not a technical gap or a forthcoming release.
 
-All rights reserved.
+5. AUDIT PATH:
+   The rights holder retains private custody of raw evidence and a master
+   hash of the BEORYS-PCT v0.2 run. Independent audits may be arranged
+   under a formal Non-Disclosure Agreement.
 
---------------------------------------------------------------------------------
-PORTUGUÊS
---------------------------------------------------------------------------------
-
-O BEORYS™, juntamente com todos os materiais, nomes e obras associados
-referidos neste repositório, é propriedade exclusiva de Roberta Sarra España.
-
-Nenhuma parte deste repositório, e nenhuma obra a que ele se refere, pode ser
-usada, reproduzida, copiada, modificada, adaptada, traduzida, distribuída,
-transmitida, exibida, publicada, sublicenciada ou explorada de qualquer forma ou
-por qualquer meio, no todo ou em parte, sem a prévia e expressa autorização
-escrita da titular dos direitos.
-
-Nenhuma licença, direito, título ou interesse de qualquer natureza é concedido,
-seja por implicação, preclusão (estoppel) ou de outro modo, exceto conforme
-expressamente previsto em acordo escrito específico assinado pela titular dos
-direitos. Isso inclui, sem limitação, qualquer direito de usar a obra para fins
-comerciais ou não comerciais, de criar obras derivadas ou de incorporar qualquer
-parte dela a outras obras.
-
-"BEORYS" e "BEORYS™" são reivindicadas como marcas de Roberta Sarra España.
-
-OS CONTEÚDOS DESTE REPOSITÓRIO SÃO FORNECIDOS "NO ESTADO EM QUE SE ENCONTRAM"
-("AS IS"), SEM GARANTIA DE QUALQUER ESPÉCIE, EXPRESSA OU IMPLÍCITA. EM NENHUMA
-HIPÓTESE A TITULAR DOS DIREITOS SERÁ RESPONSÁVEL POR QUALQUER REIVINDICAÇÃO,
-DANO OU OUTRA RESPONSABILIDADE DECORRENTE DOS CONTEÚDOS OU DE SEU USO.
-
-Todos os direitos reservados.
+THIS REPOSITORY IS PROVIDED "AS IS" FOR PUBLIC RECORD PURPOSES ONLY.
+ALL RIGHTS RESERVED. BEORYS™ IS A TRADEMARK OF ROBERTA SARRA ESPAÑA.
