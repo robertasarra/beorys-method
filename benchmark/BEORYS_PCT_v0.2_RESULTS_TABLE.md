@@ -41,8 +41,8 @@
 ## Advertências
 
 - Estes são resultados **agregados** de uma execução (v0.2, 2026-06-06). Não extrapolam automaticamente para outros domínios, conjuntos de tarefas ou modelos.
-- Os dados individuais por modelo, por caso e por execução são evidência bruta protegida — ver [(BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md)]((BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md))).
-- Para limitações completas, ver [(BEORYS_PCT_v0.2_LIMITATIONS.md)]((BEORYS_PCT_v0.2_LIMITATIONS.md))).
+- Os dados individuais por modelo, por caso e por execução são evidência bruta protegida — ver [BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md](BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md).
+- Para limitações completas, ver [BEORYS_PCT_v0.2_LIMITATIONS.md](BEORYS_PCT_v0.2_LIMITATIONS.md).
 
 ---
 
