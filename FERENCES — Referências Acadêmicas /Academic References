@@ -1,0 +1,65 @@
+# REFERENCES — Referências Acadêmicas / Academic References
+
+| | |
+|---|---|
+| **Obra / Work** | BEORYS™ |
+| **Autora / Author** | Roberta Sarra España |
+| **Conferência em fonte primária / Primary-source check** | 2026-06-06 (DOI/arXiv) |
+
+> Lista canônica detalhada das referências citadas em
+> [`../../FUNDAMENTACAO_ACADEMICA.md`](../../FUNDAMENTACAO_ACADEMICA.md) §2. O mapa
+> de qual referência sustenta qual parte da hipótese está em
+> [`LITERATURE_MAP.md`](./LITERATURE_MAP.md).
+
+---
+
+## 1. Âncoras revisadas por pares / Peer-reviewed anchors
+
+Estas fontes sustentam as afirmações centrais.
+
+| # | Obra | Identificador | Tipo |
+|---|---|---|---|
+| R01 | Zhou et al. — *IFEval: Instruction-Following Evaluation for Large Language Models* | arXiv:2311.07911 | arXiv (instrumento de avaliação canônico) |
+| R02 | Kamoi et al. — *When Can LLMs Actually Correct Their Own Mistakes?* | TACL 2024 · doi:10.1162/tacl_a_00713 | Revisado por pares |
+| R03 | Ferraz et al. — *DeCRIM: Decompose, Critique and Refine* | Findings of EMNLP 2024 · doi:10.18653/v1/2024.findings-emnlp.458 | Revisado por pares |
+| R04 | Qin et al. — *InFoBench: Evaluating Instruction Following (DRFR)* | Findings of ACL 2024 · doi:10.18653/v1/2024.findings-acl.772 | Revisado por pares |
+| R05 | Jiang et al. — *FollowBench: Multi-level Fine-grained Constraints* | ACL 2024 · doi:10.18653/v1/2024.acl-long.257 | Revisado por pares |
+| R06 | Rebedea et al. — *NeMo Guardrails: Programmable Rails* | arXiv:2310.10501 (EMNLP 2023) | Revisado por pares |
+| R07 | Dhuliawala et al. — *Chain-of-Verification Reduces Hallucination in LLMs* | arXiv:2309.11495 | arXiv |
+| R08 | Gou et al. — *CRITIC: LLMs Can Self-Correct with Tool-Interactive Critiquing* | arXiv:2305.11738 | arXiv |
+| R09 | Madaan et al. — *Self-Refine: Iterative Refinement with Self-Feedback* | arXiv:2303.17651 | arXiv |
+| R10 | Shinn et al. — *Reflexion: Language Agents with Verbal Reinforcement Learning* | arXiv:2303.11366 | arXiv |
+| R11 | Geng et al. — *JSONSchemaBench: Structured Outputs Benchmark* | arXiv:2501.10868 | arXiv |
+
+## 2. Corroboração recente (preprints 2025–2026) / Recent corroboration
+
+Estas fontes entram **apenas como corroboração**, nunca como base única de qualquer
+afirmação forte.
+
+| # | Obra | Identificador | Tipo |
+|---|---|---|---|
+| R12 | Suresh et al. — *BEAVER: An Efficient Deterministic LLM Verifier* | arXiv:2512.05439 | Preprint |
+| R13 | Tripathi et al. — *The Instruction Gap* | arXiv:2601.03269 | Preprint |
+| R14 | Song et al. — *Evaluating Implicit Regulatory Compliance in LLM Tool Invocation* | arXiv:2601.08196 | Preprint |
+| R15 | Jin — *FASTRIC: Prompt Specification Language for Verifiable LLM Interactions* | arXiv:2512.18940 | Preprint |
+| R16 | Purpura et al. — *MOSAIC: Granular Evaluation of LLM Instruction Compliance* | arXiv:2601.18554 | Preprint |
+
+---
+
+## 3. Regra de uso das fontes / Source-use rule
+
+As **âncoras revisadas por pares** (§1) sustentam as afirmações centrais; os
+**preprints recentes** (§2) entram **como corroboração**, nunca como base única de
+qualquer afirmação forte. Toda afirmação técnica neste registro está ligada a, pelo
+menos, uma fonte primária verificável (DOI/arXiv), a um benchmark, a um documento
+canônico ou ao registro público — caso contrário, **não** é apresentada como fato.
+
+The peer-reviewed anchors (§1) support the central claims; the recent preprints (§2)
+serve **only as corroboration**, never as the sole basis of any strong claim. Every
+technical claim is tied to at least one verifiable primary source (DOI/arXiv), a
+benchmark, a canonical document, or the public record — otherwise it is **not**
+presented as fact.
+
+---
+
+© 2026 Roberta Sarra España — BEORYS™. Ver [`LICENSE`](../../LICENSE).
