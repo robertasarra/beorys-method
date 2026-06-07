@@ -45,19 +45,19 @@ Os outros grupos apresentam Protocol Compliance Rate comparável em termos absol
 
 Dentro do escopo declarado (5 modelos, 100 casos, 7 categorias, 1 run, 2026-06-06), o gate externo determinístico fail-closed do BEORYS™ supera os demais métodos testados em ativação de verificação e auditabilidade, mantendo compliance de protocolo equivalente.
 
-Esta conclusão não é generalização universal. Ver [(BEORYS_PCT_v0.2_LIMITATIONS.md)]((BEORYS_PCT_v0.2_LIMITATIONS.md))).
+Esta conclusão não é generalização universal. Ver [Limitações declaradas](BEORYS_PCT_v0.2_LIMITATIONS.md).
 
 ---
 
 ## Documentos relacionados
 
-- [Método (alto nível)]((BEORYS_PCT_v0.2_METHOD.md)))
-- [Tabela completa de resultados]((BEORYS_PCT_v0.2_RESULTS_TABLE.md)))
-- [Relatório de validação]((BEORYS_PCT_v0.2_VALIDATION_REPORT.md)))
-- [Checklist de evidência]((BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md)))
-- [Limitações]((BEORYS_PCT_v0.2_LIMITATIONS.md)))
-- [Reprodutibilidade]((BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md)))
-- [Sumário público narrativo]((BEORYS_PCT_v0.2_PUBLIC_SUMMARY.md)))
+- [Método (alto nível)](BEORYS_PCT_v0.2_METHOD.md)
+- [Tabela completa de resultados](BEORYS_PCT_v0.2_RESULTS_TABLE.md)
+- [Relatório de validação](BEORYS_PCT_v0.2_VALIDATION_REPORT.md)
+- [Checklist de evidência](BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md)
+- [Limitações](BEORYS_PCT_v0.2_LIMITATIONS.md)
+- [Reprodutibilidade](BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md)
+- [Sumário público narrativo](BEORYS_PCT_v0.2_PUBLIC_SUMMARY.md)
 
 ---
 
