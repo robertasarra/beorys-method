@@ -45,7 +45,7 @@ Esta versão não publica análise de significância estatística das diferença
 
 ### 5. Reprodutibilidade pública parcial por design
 
-A reprodução integral do experimento requer acesso ao dataset, prompts e verificador protegidos — que são segredo industrial. A reprodutibilidade pública é, portanto, parcialmente limitada por decisão deliberada. Ver [(BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md)]((BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md))).
+A reprodução integral do experimento requer acesso ao dataset, prompts e verificador protegidos — que são segredo industrial. A reprodutibilidade pública é, portanto, parcialmente limitada por decisão deliberada. Ver [Declaração de reprodutibilidade](BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md).
 
 ---
 
