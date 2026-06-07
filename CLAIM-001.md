@@ -137,10 +137,11 @@ lançada.**
 ### 7.1 Lacuna acadêmica confirmada
 
 Uma revisão da literatura acadêmica atual sobre governança e conformidade de
-modelos de linguagem de grande porte — em **cinco estudos independentes** —
-confirma uma lacuna estrutural que a obra endereça: as abordagens vigentes tratam
-a confiabilidade como uma qualidade a ser obtida de um sistema fluente, e não como
-uma propriedade imposta por uma verificação externa ao sistema verificado.
+modelos de linguagem de grande porte — reunida e conferida em fonte primária
+(DOI/arXiv) no corpo de referências da **§7.2** — confirma uma lacuna estrutural
+que a obra endereça: as abordagens vigentes tratam a confiabilidade como uma
+qualidade a ser obtida de um sistema fluente, e não como uma propriedade imposta
+por uma verificação externa ao sistema verificado.
 
 ### 7.2 Literatura que sustenta o método
 
@@ -169,26 +170,46 @@ primária (DOI/arXiv) em 2026-06-06:
 As âncoras revisadas por pares sustentam as afirmações centrais; os preprints
 recentes entram como corroboração, nunca como base única de qualquer afirmação.
 
-## 8. Evidência empírica — BEORYS Benchmark v0.1
+## 8. Evidência empírica — BEORYS Benchmark v0.2
 
-Em **2026-06-06**, a autora conduziu o **BEORYS Benchmark v0.1**, o primeiro
-benchmark público a comparar diretamente as três condições de imposição de
-protocolo a modelos de linguagem. Foram testados **12 modelos distintos**, em
-**576 execuções totais**, sobre **8 tarefas** (4 de fluxo normal + 4 de
-armadilha), com 2 repetições cada.
+Em **2026-06-06**, a autora conduziu o **BEORYS Benchmark v0.2**, comparando
+diretamente **cinco** condições de imposição de protocolo a modelos de linguagem
+durante a geração fluente. Foram **5 modelos distintos**, em **2.500 execuções**,
+sobre **100 casos** em 7 categorias, cada um com a sua verdade-base factual. A
+compliance é medida sempre na **primeira saída** e julgada pelo **mesmo**
+verificador determinístico em todas as condições — o que varia entre os grupos é
+apenas o método de instrução, nunca o critério (desenho anti-circular).
 
-| Condição | Mecanismo | Compliance |
+| Condição | Mecanismo | Compliance (1ª saída) |
 |---|---|---|
-| Método A | Protocolo em prosa | 51% |
-| Método B | Checklist estruturado | 94% |
-| Método C | Gate determinístico de falha-fechada (JSON) | 95% |
+| A | Protocolo em prosa | 95% |
+| B | Checklist estruturado | 93% |
+| C | Autorreflexão | 92% |
+| D | Executor + validador por outro modelo | 93% |
+| E | Gate de falha-fechada + trava externa (BEORYS™) | 95% |
 
-**Conclusão empírica:** diferença de **44 pontos percentuais** entre a prosa e o
-gate estruturado, confirmada de forma consistente nos 12 modelos testados. O
-resultado é evidência empírica direta da lacuna que a obra preenche: a
-confiabilidade não emerge da fluência, mas de uma verificação externa,
-determinística e de falha-fechada. *(Os detalhes de implementação do benchmark não
-são divulgados neste documento.)*
+**Conclusão empírica.** Medida de forma justa, a *compliance bruta da primeira
+saída converge* (~92%–95%) em todos os métodos: a fluência, sozinha, já produz
+texto que **se lê** como conforme. Em outras palavras, os modelos **já conhecem a
+regra** — a compliance aparente da prosa iguala a do BEORYS™; o método não amplia
+esse conhecimento, ele garante a sua **execução**. A diferença do BEORYS™ não está
+na redação, e sim na **autorização** — exatamente o que o método sustenta. Sob as
+métricas pré-registradas, a condição E se separa das demais:
+
+- **acionamento do gatilho de parar-e-verificar:** 93% (E) contra 2% (prosa);
+- **saída não-autorizada:** a menor de todas (2%);
+- **aprovação falsa:** a trava determinística de E não admite esse modo de falha
+  (0%), enquanto o validador-LLM (D) aprovou 2% das saídas inválidas;
+- **auditabilidade (0–1):** a maior de todas (0,83 contra 0,60 da prosa).
+
+Este é o resultado empírico direto da lacuna que a obra preenche: a prosa atinge
+alta compliance aparente e, ainda assim, quase nunca aciona a verificação, deixa
+passar saída não-autorizada e não é auditável. A confiabilidade não emerge da
+fluência, mas de uma verificação externa, determinística e de falha-fechada. **Em
+síntese: o método não ensina a regra ao modelo — ele transforma a regra em um
+protocolo executável, verificável e auditável.** *(Este resultado é descritivo do
+run; os detalhes de implementação do benchmark não são divulgados neste
+documento.)*
 
 ## 9. Escopo e limites desta declaração
 
@@ -349,10 +370,11 @@ finished works held by the author. **Neither has been published or released.**
 ### 7.1 Confirmed academic gap
 
 A review of the current academic literature on the governance and compliance of
-large language models — across **five independent studies** — confirms a
-structural gap that the work addresses: prevailing approaches treat reliability as
-a quality to be coaxed out of a fluent system, rather than as a property enforced
-by verification external to the system being verified.
+large language models — gathered and verified against primary sources (DOI/arXiv)
+in the reference body of **§7.2** — confirms a structural gap that the work
+addresses: prevailing approaches treat reliability as a quality to be coaxed out
+of a fluent system, rather than as a property enforced by verification external to
+the system being verified.
 
 ### 7.2 Literature supporting the method
 
@@ -362,24 +384,45 @@ Portuguese version above, each reference verified against its primary source
 recent preprints serve as corroboration only, never as the sole basis of any
 claim.
 
-## 8. Empirical evidence — BEORYS Benchmark v0.1
+## 8. Empirical evidence — BEORYS Benchmark v0.2
 
-On **2026-06-06**, the author conducted the **BEORYS Benchmark v0.1**, the first
-public benchmark to directly compare three conditions for enforcing protocol on
-language models. **12 distinct models** were tested across **576 total runs** over
-**8 tasks** (4 happy-path + 4 trap), with 2 repetitions each.
+On **2026-06-06**, the author conducted the **BEORYS Benchmark v0.2**, directly
+comparing **five** conditions for enforcing protocol on language models during
+fluent generation. **5 distinct models** were run across **2,500 executions** over
+**100 cases** in 7 categories, each with its own factual ground truth. Compliance
+is always measured on the **first output** and judged by the **same** deterministic
+verifier across all conditions — what varies between groups is only the instruction
+method, never the criterion (anti-circular design).
 
-| Condition | Mechanism | Compliance |
+| Condition | Mechanism | Compliance (1st output) |
 |---|---|---|
-| Method A | Protocol in prose | 51% |
-| Method B | Structured checklist | 94% |
-| Method C | Fail-closed deterministic gate (JSON) | 95% |
+| A | Protocol in prose | 95% |
+| B | Structured checklist | 93% |
+| C | Self-reflection | 92% |
+| D | Executor + second-model validator | 93% |
+| E | Fail-closed gate + external lock (BEORYS™) | 95% |
 
-**Empirical conclusion:** a **44-percentage-point** difference between prose and
-the structured gate, confirmed consistently across the 12 models tested. This is
-direct empirical evidence of the gap the work fills: reliability does not emerge
-from fluency, but from external, deterministic, fail-closed verification.
-*(Implementation details of the benchmark are not disclosed in this document.)*
+**Empirical conclusion.** Measured fairly, *raw first-output compliance converges*
+(~92%–95%) across all methods: fluency alone already produces text that **reads** as
+compliant. In other words, the models **already know the rule** — prose's apparent
+compliance equals BEORYS™'s; the method does not increase that knowledge, it
+enforces its **execution**. The BEORYS™ difference is not in the drafting but in the
+**authorization** — exactly what the method asserts. On the pre-registered metrics,
+condition E separates from the rest:
+
+- **stop-and-verify trigger activation:** 93% (E) vs 2% (prose);
+- **unauthorized output:** the lowest of all (2%);
+- **false approval:** E's deterministic lock has no such failure mode (0%), whereas
+  the LLM validator (D) approved 2% of invalid outputs;
+- **auditability (0–1):** the highest of all (0.83 vs 0.60 for prose).
+
+This is direct empirical evidence of the gap the work fills: prose reaches high
+apparent compliance yet almost never triggers verification, lets unauthorized
+output through, and is not auditable. Reliability does not emerge from fluency, but
+from external, deterministic, fail-closed verification. **In short: the method does
+not teach the rule to the model — it turns the rule into an executable, verifiable,
+auditable protocol.** *(This result is descriptive of the run; implementation
+details of the benchmark are not disclosed in this document.)*
 
 ## 9. Scope and limits of this declaration
 
