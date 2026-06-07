@@ -1,0 +1,55 @@
+# BEORYS-PCT Benchmark v0.2 — Public Summary
+
+| | |
+|---|---|
+| **Work** | BEORYS™ |
+| **Author** | Roberta Sarra España |
+| **Run** | BEORYS-PCT Benchmark v0.2 — 2026-06-06 |
+| **Boundary** | Public summary. No implementation disclosed — see [`../../TRADE_SECRET.md`](../../TRADE_SECRET.md). |
+
+---
+
+## 1. What Was Tested
+
+Five ways of enforcing the **same** protocol on the **same** 100 test cases across 5
+models (2,500 executions, 7 categories): (A) prose, (B) checklist, (C) self-reflection,
+(D) executor + LLM-validator, and (E) the BEORYS™ external fail-closed gate. Compliance
+was measured on the first output by a single deterministic verifier.
+
+## 2. Why It Matters
+
+If reliability came from fluency or from instructions written in prose, the prose
+group would be enough. The benchmark tests whether protocol compliance during fluent
+generation depends instead on **external, mandatory verification**.
+
+## 3. Main Result
+
+Raw first-output compliance **converged** across all groups (92%–95%): fluent text
+tends to read as compliant regardless of the enforcement strategy. The external gate
+(E) separated on the other metrics — highest trigger activation (93% vs. 2% for prose),
+lowest unauthorized output (2%), highest auditability (0.83 vs. 0.60), and it avoided
+the false-pass mode exhibited by the LLM-validator (D). Full figures are in
+[`BEORYS_PCT_v0.2_RESULTS_TABLE.md`](./BEORYS_PCT_v0.2_RESULTS_TABLE.md).
+
+## 4. Interpretation
+
+The decisive difference is not in the wording but in **authorization**. The results are
+consistent with the hypothesis that reliability comes from external, deterministic,
+fail-closed verification — **under the measured conditions**, and not as universal
+proof.
+
+## 5. What Was Not Published
+
+No prompts, no dataset, no gate implementation, no internal scripts, no blocking
+criteria, no proprietary heuristics and no complete operational flow. The publication
+of this repository does not constitute disclosure of the implementation.
+
+## 6. Public Claim Supported
+
+> The results are consistent with the hypothesis that protocol compliance failures are
+> not only failures of rule knowledge, but failures of mandatory verification execution
+> during fluent generation.
+
+---
+
+© 2026 Roberta Sarra España — BEORYS™. See [`LICENSE`](../../LICENSE).
