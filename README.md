@@ -17,7 +17,7 @@
 
 # 🇧🇷 Português
 
-## Registro público de autoria e prioridade.
+## Registro público de autoria e prioridade
 
 Este repositório estabelece um registro público e datado do nome **BEORYS™** e da
 obra originária por trás dele. É publicado como questão de prioridade de autoria
@@ -51,6 +51,14 @@ modelos de linguagem de grande porte — em **cinco estudos independentes** —
 confirma uma lacuna estrutural: as abordagens vigentes tratam a confiabilidade
 como uma qualidade a ser obtida de um sistema fluente, e não como uma
 propriedade imposta por uma verificação externa ao sistema verificado.
+
+A evidência empírica conduzida pela autora confirma o ponto central: modelos
+modernos frequentemente **já conhecem a regra** — a conformidade aparente da
+instrução em prosa equivale à do BEORYS™. O que falta à prosa não é conhecimento,
+e sim **execução**: interromper, validar e bloquear. O BEORYS™ não aumenta o
+conhecimento da regra; ele a converte em um protocolo **executável, verificável e
+auditável**. A fundamentação e a evidência empírica acompanham este registro — ver
+[`FUNDAMENTACAO_ACADEMICA.md`](./FUNDAMENTACAO_ACADEMICA.md).
 
 O BEORYS™ foi concebido em torno do fechamento dessa lacuna. O modo como ele a
 fecha não é divulgado neste repositório.
@@ -105,6 +113,14 @@ structural gap: prevailing approaches treat reliability as a quality to be coaxe
 out of a fluent system, rather than as a property enforced by verification that
 sits outside the system being verified.
 
+Empirical evidence run by the author confirms the central point: modern models
+often **already know the rule** — prose instruction's apparent compliance equals
+BEORYS™'s. What prose lacks is not knowledge but **execution**: stopping,
+validating, and blocking. BEORYS™ does not increase knowledge of the rule; it turns
+the rule into an **executable, verifiable, auditable** protocol. The academic
+foundation and empirical evidence accompany this record — see
+[`FUNDAMENTACAO_ACADEMICA.md`](./FUNDAMENTACAO_ACADEMICA.md).
+
 BEORYS™ is built around closing that gap. The means by which it does so are not
 disclosed in this repository.
 
@@ -129,4 +145,4 @@ Ver / see [`LICENSE`](./LICENSE).
 
 **"BEORYS"** e **"BEORYS™"** são reivindicadas como marcas de Roberta Sarra
 España. / **"BEORYS"** and **"BEORYS™"** are claimed as trademarks of Roberta
-Sarra España. 
+Sarra España.
