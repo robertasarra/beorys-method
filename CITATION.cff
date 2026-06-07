@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "Para citar esta obra, use os metadados abaixo."
+title: "BEORYS™: Metodologia de Controle Epistêmico de LLMs"
+authors:
+  - family-names: "Sarra España"
+    given-names: "Roberta"
+type: software
+repository-code: "https://github.com/robertasarra/beorys-method"
+url: "https://github.com/robertasarra/beorys-method"
+abstract: >
+  BEORYS™ é uma metodologia proprietária de controle epistêmico de modelos de linguagem (LLMs).
+  Princípio fundador: a fluência pode redigir; não pode autorizar. A metodologia separa produção
+  de autorização, delegando a autorização a verificação externa, determinística, auditável e de
+  falha-fechada. Este repositório é registro público de autoria, prioridade, fundamentação
+  acadêmica e resultados agregados — não implementação.
+keywords:
+  - LLM
+  - protocol compliance
+  - epistemic control
+  - fail-closed gate
+  - instruction following
+  - deterministic verifier
+license-url: "https://github.com/robertasarra/beorys-method/blob/main/LICENSE"
+date-released: "2026-06-06"
+version: "1.0.0"
+identifiers:
+  - type: url
+    value: "https://github.com/robertasarra/beorys-method"
+    description: "Repositório público BEORYS™"
+notes: >
+  A citação desta obra não concede licença de uso, reprodução ou implementação da metodologia
+  BEORYS™. Todos os direitos reservados a Roberta Sarra España.
