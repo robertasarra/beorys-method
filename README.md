@@ -44,16 +44,33 @@ Isso é expresso no princípio canônico:
 
 > **"A fluência pode redigir; não pode autorizar."**
 
+## Autorização vs. Fluência
+
+**Produzir não é autorizar.** Um modelo fluente pode redigir uma resposta que
+*parece* correta, mas a aparência de correção não é confiabilidade. No BEORYS™:
+
+- **fluência não implica confiabilidade** — um texto bem redigido pode estar errado;
+- **autorizar exige validação externa** — independente de quem (ou do quê) produziu
+  a resposta;
+- o método busca **transformar instruções em protocolos verificáveis**, em vez de
+  confiar que a própria fluência se autorregule.
+
+Confiabilidade não deve emergir da fluência; deve ser imposta por mecanismos
+verificáveis, auditáveis e independentes daquilo que produziu a resposta. *Como*
+isso é implementado não é divulgado neste repositório.
+
 ## A lacuna que o BEORYS™ endereça
 
 Uma revisão da literatura acadêmica atual sobre governança e conformidade de
-modelos de linguagem de grande porte — em **cinco estudos independentes** —
-confirma uma lacuna estrutural: as abordagens vigentes tratam a confiabilidade
+modelos de linguagem de grande porte — reunida e conferida em fonte primária
+(DOI/arXiv) em [`FUNDAMENTACAO_ACADEMICA.md`](./FUNDAMENTACAO_ACADEMICA.md) —
+aponta para uma lacuna estrutural: as abordagens vigentes tratam a confiabilidade
 como uma qualidade a ser obtida de um sistema fluente, e não como uma
 propriedade imposta por uma verificação externa ao sistema verificado.
 
-A evidência empírica conduzida pela autora confirma o ponto central: modelos
-modernos frequentemente **já conhecem a regra** — a conformidade aparente da
+A evidência empírica conduzida pela autora é consistente com o ponto central: os
+modelos avaliados **apresentaram evidência de conhecimento suficiente das regras
+testadas** — a conformidade aparente da
 instrução em prosa equivale à do BEORYS™. O que falta à prosa não é conhecimento,
 e sim **execução**: interromper, validar e bloquear. O BEORYS™ não aumenta o
 conhecimento da regra; ele a converte em um protocolo **executável, verificável e
@@ -105,17 +122,34 @@ This is captured in the canonical principle:
 
 > **"A fluência pode redigir; não pode autorizar."**
 
+## Authorization vs. Fluency
+
+**Producing is not authorizing.** A fluent model can draft an answer that *looks*
+correct, but the appearance of correctness is not reliability. Within BEORYS™:
+
+- **fluency does not imply reliability** — well-written text can still be wrong;
+- **authorization requires external validation** — independent of whoever (or
+  whatever) produced the answer;
+- the method seeks to **turn instructions into verifiable protocols**, rather than
+  trusting fluency to police itself.
+
+Reliability must not emerge from fluency; it must be enforced by mechanisms that are
+verifiable, auditable, and independent of whatever produced the answer. *How* this
+is implemented is not disclosed in this repository.
+
 ## The gap this addresses
 
 A review of the current academic literature on the governance and compliance of
-large language models — across **five independent studies** — confirms a
-structural gap: prevailing approaches treat reliability as a quality to be coaxed
+large language models — gathered and verified against primary sources (DOI/arXiv)
+in [`FUNDAMENTACAO_ACADEMICA.md`](./FUNDAMENTACAO_ACADEMICA.md) — the reviewed
+literature suggests a structural gap: prevailing approaches treat reliability as a quality to be coaxed
 out of a fluent system, rather than as a property enforced by verification that
 sits outside the system being verified.
 
-Empirical evidence run by the author confirms the central point: modern models
-often **already know the rule** — prose instruction's apparent compliance equals
-BEORYS™'s. What prose lacks is not knowledge but **execution**: stopping,
+Empirical evidence run by the author is consistent with the central point: the
+evaluated models showed evidence of sufficient knowledge of the rules tested —
+prose instruction's apparent compliance equals BEORYS™'s under the measured
+conditions. What prose lacks is not knowledge but **execution**: stopping,
 validating, and blocking. BEORYS™ does not increase knowledge of the rule; it turns
 the rule into an **executable, verifiable, auditable** protocol. The academic
 foundation and empirical evidence accompany this record — see
@@ -146,3 +180,4 @@ Ver / see [`LICENSE`](./LICENSE).
 **"BEORYS"** e **"BEORYS™"** são reivindicadas como marcas de Roberta Sarra
 España. / **"BEORYS"** and **"BEORYS™"** are claimed as trademarks of Roberta
 Sarra España.
+
