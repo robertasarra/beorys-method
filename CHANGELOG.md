@@ -42,5 +42,5 @@ Formato: [Versão] — Data — Descrição
 
 ---
 
-## Pendências dependentes da titular (ver integri(integrity/(integrity/SHA256_REGISTRY.md)))
+## Pendências dependentes da titular (ver [SHA256_REGISTRY.md](integrity/SHA256_REGISTRY.md))
 - Hash-mestre privado do run BEORYS-PCT v0.2: a fornecer pela titular para inclusão em custódia declarada
