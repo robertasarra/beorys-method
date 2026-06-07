@@ -1,101 +1,88 @@
-# BEORYS-PCT Benchmark v0.2 — Method
+# BEORYS-PCT v0.2 — Declaração de Método
 
-| | |
-|---|---|
-| **Work** | BEORYS™ — Operating System for Continuity, Governance and Authorization |
-| **Author** | Roberta Sarra España |
-| **Run** | BEORYS-PCT Benchmark v0.2 — 2026-06-06 |
-| **Boundary** | Public method document. No implementation, prompts, dataset, gates or scripts are disclosed — see [`../../TRADE_SECRET.md`](../../TRADE_SECRET.md). |
-
-> Founding principle: *fluency may draft; it cannot authorize.*
-> Operational principle: the method does not teach the rule to the model; it turns the
-> rule into an executable, verifiable and auditable protocol.
+**Benchmark:** BEORYS Protocol Compliance Test (BEORYS-PCT) v0.2  
+**Data de execução:** 2026-06-06  
+**Titular:** Roberta Sarra España
 
 ---
 
-## 1. Purpose
+## 1. Identificação
 
-The BEORYS-PCT (Protocol-Compliance Test) Benchmark measures, under controlled and
-identical conditions, **how different enforcement strategies affect a language
-model's compliance with a protocol during fluent generation**. Its purpose is to
-provide aggregate, auditable public evidence about *where* protocol violations come
-from, without disclosing the protected implementation that the work relies upon.
-
-## 2. Research Question
-
-Do protocol violations in LLMs stem primarily from **lack of knowledge of the rule**,
-or from **failure to execute the verification at the correct moment** during fluent
-generation?
-
-## 3. Hypothesis
-
-Protocol-compliance failures are **not only** failures of rule knowledge; they are, to
-a decisive extent, **failures of mandatory verification execution** during fluent
-generation. Consequently, reliability is expected to come from **external,
-deterministic, fail-closed authorization**, not from the fluency of the text itself.
-
-## 4. Experimental Design
-
-- **5 models**, **100 test cases**, **7 categories**, **2,500 executions**.
-- The **same** test cases were applied across all groups.
-- Compliance was measured on the **first output** for every group.
-- Each group represents **one way of enforcing the same protocol**; only the
-  enforcement mechanism varied between groups, not the task or the criterion.
-
-**Models evaluated**
-
-- `openai/gpt-4o-mini`
-- `anthropic/claude-haiku-4.5`
-- `google/gemini-3.5-flash`
-- `meta-llama/llama-3.3-70b-instruct`
-- `deepseek/deepseek-chat-v3.1`
-
-## 5. Compared Groups
-
-| Group | Condition |
+| Campo | Valor |
 |---|---|
-| A | Prose |
-| B | Checklist |
-| C | Self-reflection |
-| D | Executor + LLM-validator |
-| E | BEORYS™ — external gate + fail-closed lock |
-
-## 6. Evaluation Principle
-
-All groups were judged against the **same deterministic verifier** and the **same
-metric definitions**. The evaluation measured what each strategy actually produced on
-its first output — not a self-report by the model about its own compliance.
-
-## 7. Anti-Circularity Rule
-
-> Compliance was measured on the first output using the same deterministic verifier
-> across all groups. The evaluation criterion did not change between conditions.
-
-This rule prevents a group from being credited for compliance simply because its own
-mechanism declared itself compliant. The internal functioning of the verifier is
-**not** described here (protected scope).
-
-## 8. Metrics
-
-The run reports aggregate metrics including: Protocol Compliance Rate, Trigger
-Activation Rate, Factual Assertion Detection Rate, Evidence Attachment Rate,
-Unauthorized Output Rate, Self-Correction Failure Rate, External Gate Block Rate,
-False Pass Rate, Recovery Rate and Auditability Score. The full aggregate values are
-published in [`BEORYS_PCT_v0.2_RESULTS_TABLE.md`](./BEORYS_PCT_v0.2_RESULTS_TABLE.md).
-
-## 9. Public Scope
-
-Public: the benchmark identifier and date; the number of executions, models, test
-cases, categories and groups; the high-level group definitions; and the aggregate
-metrics. This document and its companions describe the method at this level only.
-
-## 10. Protected Scope
-
-Protected as trade secret and **not** disclosed: the full prompts, the full dataset,
-the gate implementation, the blocking criteria, the internal scripts, the proprietary
-heuristics and the complete operational flow. The publication of this benchmark does
-not constitute disclosure of the implementation.
+| Nome do benchmark | BEORYS-PCT v0.2 |
+| Versão | 0.2 |
+| Data | 2026-06-06 |
+| Modelos avaliados | 5 |
+| Casos de avaliação | 100 |
+| Categorias de tarefa | 7 |
+| Execuções totais | 2.500 |
+| Grupos de instrução | A, B, C, D, E |
 
 ---
 
-© 2026 Roberta Sarra España — BEORYS™. See [`LICENSE`](../../LICENSE).
+## 2. Objetivo
+
+Comparar a eficácia de diferentes métodos de instrução a LLMs para induzir compliance com o protocolo canônico BEORYS™, medida na primeira saída do modelo (sem repetição ou reformulação).
+
+A única variável manipulada entre grupos é a **força e forma de imposição da instrução**. Tudo mais (conjunto de tarefas, categorias, modelos, parâmetros) permanece constante.
+
+---
+
+## 3. Grupos avaliados
+
+| Grupo | Tipo de instrução |
+|---|---|
+| A | Prosa declarativa (regra em linguagem natural) |
+| B | Checklist procedural (campos obrigatórios a preencher) |
+| C | Auto-reflexão estruturada (revisão por ciclo interno) |
+| D | Executor + validador LLM (separação de papéis, validador é modelo) |
+| E | BEORYS™ (gate externo determinístico, fail-closed) |
+
+---
+
+## 4. Métricas
+
+As métricas são aplicadas deterministicamente pelo mesmo verificador para todos os grupos. A lista de métricas é pública; os critérios operacionais de cada métrica são protegidos como segredo industrial.
+
+Métricas publicadas:
+- Protocol Compliance Rate
+- Trigger Activation Rate
+- Factual Assertion Detection Rate
+- Evidence Attachment Rate
+- Unauthorized Output Rate
+- Self-Correction Failure Rate
+- External Gate Block Rate (aplicável ao Grupo E)
+- False Pass Rate (aplicável ao Grupo D)
+- Recovery Rate (aplicável ao Grupo E)
+- Auditability Score
+
+---
+
+## 5. Princípio de medição
+
+- **Compliance de primeira tentativa:** a pontuação reflete o output não editado da primeira chamada ao modelo. Sem correções, sem reformulações.
+- **Verificador determinístico único:** o mesmo verificador é aplicado a todos os grupos. Não há julgamento subjetivo na pontuação.
+- **Regra de anticircularidade:** o verificador não é o mesmo modelo sendo avaliado. Verificadores são scripts determinísticos externos, não LLMs.
+
+---
+
+## 6. O que não é divulgado
+
+Por decisão de proteção de segredo industrial, os seguintes elementos **não são publicados**:
+
+- Prompts internos de cada grupo (completos ou parciais)
+- Conjunto de casos individual (tarefas, verdades-base, saídas brutas)
+- Critérios operacionais do verificador (thresholds, condições de bloqueio)
+- Lógica de pipeline e orquestração
+- Identidade individual dos modelos avaliados
+
+---
+
+## 7. Versão e relação com v0.1
+
+O BEORYS-PCT v0.2 é uma versão ampliada e reestruturada do experimento interno v0.1. As diferenças de escopo entre versões não são publicadas. Os dados da v0.1 são evidência interna protegida.
+
+---
+
+*Todos os direitos reservados. BEORYS™ é marca de Roberta Sarra España.*
