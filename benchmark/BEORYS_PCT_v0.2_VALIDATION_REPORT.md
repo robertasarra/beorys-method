@@ -22,7 +22,7 @@ O BEORYS-PCT v0.2 foi conduzido sob as seguintes condições, declaradas publica
 
 ## 2. O que esta validação afirma
 
-- Que os resultados agregados publicados na [tabela de resultados]((BEORYS_PCT_v0.2_RESULTS_TABLE.md))) refletem a execução do benchmark nas condições declaradas.
+- Que os resultados agregados publicados na [tabela de resultados](BEORYS_PCT_v0.2_RESULTS_TABLE.md) refletem a execução do benchmark nas condições declaradas.
 - Que a diferença entre grupos (especialmente Trigger Activation Rate: 2% em A vs. 93% em E) é resultado das condições experimentais controladas.
 - Que o verificador é externo e determinístico — não é o mesmo modelo sendo avaliado.
 
@@ -31,7 +31,7 @@ O BEORYS-PCT v0.2 foi conduzido sob as seguintes condições, declaradas publica
 ## 3. O que esta validação não afirma
 
 - **Universalidade:** estes resultados não constituem prova de que o Grupo E supera os demais em todos os domínios, conjuntos de tarefas ou modelos.
-- **Reprodutibilidade plena:** a reprodução integral do experimento requer acesso ao dataset, prompts e verificador protegidos — ver [(BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md)]((BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md))).
+- **Reprodutibilidade plena:** a reprodução integral do experimento requer acesso ao dataset, prompts e verificador protegidos — ver [Declaração de reprodutibilidade](BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md).
 - **Significância estatística publicada:** análise estatística formal das diferenças entre grupos não está publicada nesta versão.
 - **Veracidade factual:** o benchmark mede compliance estrutural de protocolo contra verdade-base das tarefas — não veracidade factual de evidências criadas livremente pelo modelo.
 
@@ -39,7 +39,7 @@ O BEORYS-PCT v0.2 foi conduzido sob as seguintes condições, declaradas publica
 
 ## 4. Evidência de integridade
 
-A integridade dos documentos públicos é coberta por registro SHA-256 em [integri(../integrity/(../integrity/SHA256_REGISTRY.md))](../integrity/(../integrity/SHA256_REGISTRY.md))).
+A integridade dos documentos públicos é coberta por registro SHA-256 em [SHA256_REGISTRY.md](../integrity/SHA256_REGISTRY.md).
 
 A titular mantém em custódia privada:
 - Hash-mestre do run v0.2 (cobrindo dataset, outputs brutos, logs e configuração completa)
