@@ -1,60 +1,67 @@
-# BEORYS-PCT Benchmark v0.2 — Reproducibility Statement
+# BEORYS-PCT v0.2 — Declaração de Reprodutibilidade
 
-| | |
-|---|---|
-| **Work** | BEORYS™ |
-| **Author** | Roberta Sarra España |
-| **Run** | BEORYS-PCT Benchmark v0.2 — 2026-06-06 |
-| **Boundary** | Public reproducibility record. No implementation disclosed — see [`../../TRADE_SECRET.md`](../../TRADE_SECRET.md). |
+**Benchmark:** BEORYS Protocol Compliance Test v0.2  
+**Data:** 2026-06-06  
+**Titular:** Roberta Sarra España
 
 ---
 
-## 1. Reproducibility Level
+## 1. Nível de reprodutibilidade pública
 
-> **Public reproducibility level: Partial.**
-> Reason: aggregate method and results are public; protected implementation, full
-> prompts, dataset and gates are withheld as trade secret.
+**Parcial — por design deliberado.**
 
-## 2. What Can Be Reproduced Publicly
-
-- The **experimental design** at a high level: five enforcement strategies (A–E)
-  compared on the same cases, with compliance measured on the first output by a single
-  deterministic verifier.
-- The **aggregate results** as published in
-  [`BEORYS_PCT_v0.2_RESULTS_TABLE.md`](./BEORYS_PCT_v0.2_RESULTS_TABLE.md).
-- The **conceptual structure** of a three-arm comparison (prose vs. checklist vs.
-  external fail-closed gate), which an independent party may re-implement on its own
-  cases and models.
-
-## 3. What Cannot Be Reproduced Publicly
-
-- The full prompts and the full dataset.
-- The gate implementation, the blocking criteria and the internal scripts.
-- The proprietary heuristics and the complete operational flow.
-
-## 4. Why Full Reproducibility Is Restricted
-
-The implementation is the core protected asset of the work. Publishing it would
-disclose the trade secret that the public record explicitly preserves. The goal of
-this record is **public priority and auditability of results**, not transfer of the
-implementation.
-
-## 5. Commercial and IP Boundary
-
-BEORYS™ and its implementation are proprietary. This record grants **no** license or
-authorization of use (see [`../../NOTICE.md`](../../NOTICE.md) and
-[`../../LICENSE`](../../LICENSE)). The publication of this repository does not
-constitute disclosure of the implementation.
-
-## 6. Future Independent Audit Path
-
-Independent validation is possible **without** disclosing the trade secret: a trusted
-auditor may, under appropriate confidentiality, verify the run's raw evidence against
-its SHA-256 master hash (see
-[`../../integrity/HASH_POLICY.md`](../../integrity/HASH_POLICY.md)), and/or replicate
-the three-arm comparison on independent cases and models to test whether the same
-qualitative pattern emerges.
+A reprodutibilidade parcial é uma consequência direta da proteção de segredo industrial. Não é uma lacuna técnica nem um compromisso de publicação futura.
 
 ---
 
-© 2026 Roberta Sarra España — BEORYS™. See [`LICENSE`](../../LICENSE).
+## 2. O que pode ser reproduzido publicamente
+
+| Elemento | Reprodutível? | Observação |
+|---|---|---|
+| Desenho experimental de alto nível | ✅ Sim | 5 modelos, 100 casos, 7 categorias, grupos A–E, mesmas condições |
+| Princípio de medição | ✅ Sim | First-attempt, deterministic verifier, anticircular |
+| Resultados agregados publicados | ✅ Sim | Tabela em (BEORYS-PCT Benchmark v0.2 — Results Table) |
+| Estrutura de métricas (nomes) | ✅ Sim | Listadas em (BEORYS-PCT Benchmark v0.2 — Method) |
+| Experimento com design análogo usando recursos próprios | ⚠️ Parcialmente | Possível replicar o conceito com tarefas e prompts próprios; resultados não serão comparáveis diretamente |
+
+---
+
+## 3. O que não pode ser reproduzido sem acesso protegido
+
+| Elemento | Reprodutível? | Razão |
+|---|---|---|
+| Dataset exato (100 casos com verdades-base) | ❌ Não | Segredo industrial |
+| Prompts internos de cada grupo (A–E) | ❌ Não | Propriedade intelectual central |
+| Verificador determinístico (scripts) | ❌ Não | Implementação proprietária |
+| Critérios operacionais de compliance | ❌ Não | Núcleo do método |
+| Run exato com os mesmos modelos nas mesmas versões | ❌ Não | Dataset + prompts protegidos |
+
+---
+
+## 4. Caminho de reprodutibilidade futura (auditoria)
+
+A titular mantém em custódia privada:
+- Hash-mestre SHA-256 do run v0.2 (cobrindo dataset + outputs + logs + configuração)
+- Evidências brutas do run
+
+Um **auditor independente qualificado** pode:
+1. Assinar NDA formal com a titular
+2. Receber acesso controlado às evidências brutas e ao verificador
+3. Verificar que os resultados publicados correspondem às evidências protegidas
+4. Emitir relatório de auditoria
+
+Este caminho constitui o nível máximo de reprodutibilidade compatível com a proteção de segredo industrial.
+
+---
+
+## 5. Referência de benchmark para terceiros
+
+Pesquisadores que desejem comparar seus próprios resultados com os do BEORYS-PCT v0.2 podem:
+- Citar a tabela agregada pública com atribuição correta
+- Conduzir seus próprios experimentos com métodos análogos aos grupos A–D (que são conhecidos da literatura) e comparar com os agregados publicados do Grupo E
+
+A comparação direta com os dados brutos requer acordo de auditoria com a titular.
+
+---
+
+*Todos os direitos reservados. BEORYS™ é marca de Roberta Sarra España.*
