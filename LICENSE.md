@@ -28,7 +28,7 @@ TERMS OF USE FOR THIS REPOSITORY:
      public documents in this repository.
    - Commercial exploitation of any element of the methodology.
 
-3. NO (LICENSE.md) GRANTED:
+3. NO LICENSE GRANTED:
    The publication of this repository does not grant any license to use,
    reproduce, implement, adapt, or commercially exploit the BEORYS™
    methodology or any of its components.
