@@ -25,7 +25,7 @@ Disponível neste repositório, citável com atribuição:
 | Princípio de medição (first-attempt, deterministic, anticircular) | ✅ público | (BEORYS_PCT_v0.2_METHOD.md) |
 | Declaração de limitações | ✅ público | (BEORYS_PCT_v0.2_LIMITATIONS.md) |
 | Declaração de reprodutibilidade parcial | ✅ público | (BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md) |
-| Hashes SHA-256 dos documentos públicos | ✅ público | integri(../integrity/(../integrity/SHA256_REGISTRY.md)) |
+| Hashes SHA-256 dos documentos públicos | ✅ público | [SHA256_REGISTRY.md](../integrity/SHA256_REGISTRY.md) |
 
 ---
 
