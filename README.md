@@ -1,183 +1,120 @@
-# BEORYS™
+# BEORYS™ — Registro Público de Autoria e Método
 
-**Um sistema operacional de continuidade e governança.**
-**An operating system for continuity and governance.**
+**BEORYS™** é uma obra e metodologia proprietária de controle epistêmico de modelos de linguagem (LLMs), desenvolvida por Roberta Sarra España.
 
-> *"A fluência pode redigir; não pode autorizar."*
-> *(Fluency may draft; it cannot authorize.)*
+---
 
-| | |
+## Princípio fundador
+
+> **"A fluência pode redigir; não pode autorizar."**
+
+A tese central: o problema não é ensinar uma regra ao LLM; é obrigar que a verificação seja executada no momento correto. A solução defendida é separar produção de autorização — o LLM pode gerar, mas a autorização deve vir de verificação externa, determinística, auditável e de falha-fechada.
+
+---
+
+## O que é este repositório
+
+Este repositório **não é um pacote reprodutível de implementação.** É um registro público de autoria, prioridade, fundamentação acadêmica, resultados agregados e integridade documental. A implementação, os prompts, os critérios de bloqueio, os scripts, o dataset integral e a lógica operacional permanecem protegidos como segredo industrial.
+
+---
+
+## Documentos públicos
+
+### Autoria e reivindicação
+| Documento | Descrição |
 |---|---|
-| **Nome / Name** | BEORYS™ |
-| **Autora / Author** | Roberta Sarra España |
-| **Registro público / Public record** | 2026 |
-| **Situação / Status** | Todos os direitos reservados — ver [`LICENSE`](./LICENSE) / All rights reserved — see [`LICENSE`](./LICENSE) |
+| [CLAIM-001.md](./CLAIM-001.md) | Declaração pública de autoria e prioridade |
+| [docs/claims/CLAIM-001.md](./CLAIM-001.md) | Cópia canônica em docs/ |
+
+### Metodologia e benchmark
+| Documento | Descrição |
+|---|---|
+| [docs/benchmark/BEORYS_PCT_v0.2_PUBLIC_SUMMARY.md](./BEORYS_PCT_v0.2_PUBLIC_SUMMARY.md) | Sumário público do benchmark |
+| [docs/benchmark/BEORYS_PCT_v0.2_SUMMARY.md](./BEORYS_PCT_v0.2_SUMMARY.md) | Sumário executivo |
+| [docs/benchmark/BEORYS_PCT_v0.2_METHOD.md](./BEORYS_PCT_v0.2_METHOD.md) | Declaração do método (alto nível) |
+| [docs/benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md](./BEORYS_PCT_v0.2_RESULTS_TABLE.md) | Tabela de resultados agregados |
+| [docs/benchmark/BEORYS_PCT_v0.2_VALIDATION_REPORT.md](./BEORYS_PCT_v0.2_VALIDATION_REPORT.md) | Relatório de validação pública |
+| [docs/benchmark/BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md](./BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md) | Checklist de evidência pública vs. protegida |
+| [docs/benchmark/BEORYS_PCT_v0.2_LIMITATIONS.md](./BEORYS_PCT_v0.2_LIMITATIONS.md) | Limitações declaradas |
+| [docs/benchmark/BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md](./BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md) | Declaração de reprodutibilidade |
+
+### Fundamentação acadêmica
+| Documento | Descrição |
+|---|---|
+| [FUNDAMENTACAO_ACADEMICA.md](./FUNDAMENTACAO_ACADEMICA.md) | Embasamento em literatura revisada |
+| [docs/literature/REFERENCES.md](./REFERENCES.md) | Lista de referências verificadas |
+| [docs/literature/LITERATURE_MAP.md](./LITERATURE_MAP.md) | Mapa afirmação → fonte |
+
+### Segredo industrial e licença
+| Documento | Descrição |
+|---|---|
+| [TRADE_SECRET.md](./TRADE_SECRET.md) | Fronteira entre público e protegido |
+| [NOTICE.md](./NOTICE.md) | Todos os direitos reservados |
+| [LICENSE](./LICENSE) | Termos de uso do repositório público |
+
+### Integridade documental
+| Documento | Descrição |
+|---|---|
+| [integrity/HASH_POLICY.md](./HASH_POLICY.md) | Política de hashes SHA-256 |
+| [integrity/SHA256_REGISTRY.md](./SHA256_REGISTRY.md) | Registro de hashes dos documentos públicos |
+| [integrity/RELEASE_INTEGRITY.md](./RELEASE_INTEGRITY.md) | Declaração de integridade desta versão |
 
 ---
 
-# 🇧🇷 Português
+## Resultados agregados autorizados (BEORYS-PCT v0.2)
 
-## Registro público de autoria e prioridade
+Benchmark comparativo entre 5 grupos de instrução (A a E), medindo compliance de protocolo em 100 casos, 7 categorias, 2.500 execuções:
 
-Este repositório estabelece um registro público e datado do nome **BEORYS™** e da
-obra originária por trás dele. É publicado como questão de prioridade de autoria
-e divulgação pública.
+| Grupo | Trigger Activation Rate | Auditability Score |
+|---|---:|---:|
+| A — Prosa | 2% | 0.60 |
+| B — Checklist | 23% | 0.64 |
+| C — Auto-reflexão | 23% | 0.66 |
+| D — Executor + LLM-validador | 2% | 0.61 |
+| **E — BEORYS™** | **93%** | **0.83** |
 
-Ele deliberadamente **não contém implementação**: nenhum código-fonte, nenhum
-script, nenhum capítulo, nenhum toolkit e nenhum detalhe operacional.
-
-## O que é o BEORYS™ (alto nível)
-
-O BEORYS™ é um sistema operacional de continuidade e governança: uma forma
-estruturada de uma organização transformar conhecimento tácito, processos
-críticos e práticas dispersas em uma base operacional única, auditável e
-transferível.
-
-Seu princípio fundador é a separação estrita entre **produzir** e **autorizar**.
-A fluência — humana ou de máquina — pode produzir um texto que se lê como
-verdadeiro. Ela não pode, por si só, tornar esse texto autoritativo. No BEORYS™,
-uma afirmação só se torna autoritativa depois de passar por uma verificação
-externa e independente daquilo que a produziu. Redigir e autorizar nunca são o
-mesmo ato, nem são exercidos pela mesma autoridade.
-
-Isso é expresso no princípio canônico:
-
-> **"A fluência pode redigir; não pode autorizar."**
-
-## Autorização vs. Fluência
-
-**Produzir não é autorizar.** Um modelo fluente pode redigir uma resposta que
-*parece* correta, mas a aparência de correção não é confiabilidade. No BEORYS™:
-
-- **fluência não implica confiabilidade** — um texto bem redigido pode estar errado;
-- **autorizar exige validação externa** — independente de quem (ou do quê) produziu
-  a resposta;
-- o método busca **transformar instruções em protocolos verificáveis**, em vez de
-  confiar que a própria fluência se autorregule.
-
-Confiabilidade não deve emergir da fluência; deve ser imposta por mecanismos
-verificáveis, auditáveis e independentes daquilo que produziu a resposta. *Como*
-isso é implementado não é divulgado neste repositório.
-
-## A lacuna que o BEORYS™ endereça
-
-Uma revisão da literatura acadêmica atual sobre governança e conformidade de
-modelos de linguagem de grande porte — reunida e conferida em fonte primária
-(DOI/arXiv) em [`FUNDAMENTACAO_ACADEMICA.md`](./FUNDAMENTACAO_ACADEMICA.md) —
-aponta para uma lacuna estrutural: as abordagens vigentes tratam a confiabilidade
-como uma qualidade a ser obtida de um sistema fluente, e não como uma
-propriedade imposta por uma verificação externa ao sistema verificado.
-
-A evidência empírica conduzida pela autora é consistente com o ponto central: os
-modelos avaliados **apresentaram evidência de conhecimento suficiente das regras
-testadas** — a conformidade aparente da
-instrução em prosa equivale à do BEORYS™. O que falta à prosa não é conhecimento,
-e sim **execução**: interromper, validar e bloquear. O BEORYS™ não aumenta o
-conhecimento da regra; ele a converte em um protocolo **executável, verificável e
-auditável**. A fundamentação e a evidência empírica acompanham este registro — ver
-[`FUNDAMENTACAO_ACADEMICA.md`](./FUNDAMENTACAO_ACADEMICA.md).
-
-O BEORYS™ foi concebido em torno do fechamento dessa lacuna. O modo como ele a
-fecha não é divulgado neste repositório.
-
-## Existência de obra adicional
-
-Um livro completo e um toolkit profissional já existem como obras finalizadas e
-governadas. **Nenhum dos dois foi publicado ou lançado.** Sua publicação, e
-quaisquer registros associados, seguirão este registro público. Nenhuma parte de
-qualquer das obras — texto, estrutura ou conteúdo operacional — está incluída
-aqui.
-
-## Autoria
-
-**Roberta Sarra España** — autora e idealizadora do BEORYS™.
+Tabela completa: [docs/benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md](./BEORYS_PCT_v0.2_RESULTS_TABLE.md)
 
 ---
 
-# 🌎 English
+## O que este repositório não contém
 
-## Public record of authorship and priority
+- Código-fonte de gates, validadores, pipeline ou scripts internos
+- Prompts internos completos ou variações de prompts
+- Dataset integral do benchmark (casos, verdades-base, saídas brutas)
+- Critérios proprietários de bloqueio, thresholds ou autorização
+- Lógica operacional detalhada dos gates
+- Toolkit profissional ou qualquer material de implementação
+- Capítulos do livro ou termos comerciais
 
-This repository establishes a public, timestamped record of the name **BEORYS™**
-and of the originating work behind it. It is published as a matter of authorship
-priority and public disclosure.
-
-It deliberately contains **no implementation**: no source code, no scripts, no
-chapters, no toolkit, and no operational detail.
-
-## What BEORYS™ is (high level)
-
-BEORYS™ is an operating system for continuity and governance: a structured way
-for organizations to turn tacit knowledge, critical processes, and dispersed
-practices into a single, auditable, and transferable operational base.
-
-Its founding principle is a strict separation between **producing** and
-**authorizing**. Fluency — human or machine — can produce text that reads as
-true. It cannot, by itself, make that text authoritative. Within BEORYS™, an
-assertion becomes authoritative only after it passes a verification that is
-external to, and independent of, whatever produced it. Drafting and authorization
-are never the same act, and never performed by the same authority.
-
-This is captured in the canonical principle:
-
-> **"A fluência pode redigir; não pode autorizar."**
-
-## Authorization vs. Fluency
-
-**Producing is not authorizing.** A fluent model can draft an answer that *looks*
-correct, but the appearance of correctness is not reliability. Within BEORYS™:
-
-- **fluency does not imply reliability** — well-written text can still be wrong;
-- **authorization requires external validation** — independent of whoever (or
-  whatever) produced the answer;
-- the method seeks to **turn instructions into verifiable protocols**, rather than
-  trusting fluency to police itself.
-
-Reliability must not emerge from fluency; it must be enforced by mechanisms that are
-verifiable, auditable, and independent of whatever produced the answer. *How* this
-is implemented is not disclosed in this repository.
-
-## The gap this addresses
-
-A review of the current academic literature on the governance and compliance of
-large language models — gathered and verified against primary sources (DOI/arXiv)
-in [`FUNDAMENTACAO_ACADEMICA.md`](./FUNDAMENTACAO_ACADEMICA.md) — the reviewed
-literature suggests a structural gap: prevailing approaches treat reliability as a quality to be coaxed
-out of a fluent system, rather than as a property enforced by verification that
-sits outside the system being verified.
-
-Empirical evidence run by the author is consistent with the central point: the
-evaluated models showed evidence of sufficient knowledge of the rules tested —
-prose instruction's apparent compliance equals BEORYS™'s under the measured
-conditions. What prose lacks is not knowledge but **execution**: stopping,
-validating, and blocking. BEORYS™ does not increase knowledge of the rule; it turns
-the rule into an **executable, verifiable, auditable** protocol. The academic
-foundation and empirical evidence accompany this record — see
-[`FUNDAMENTACAO_ACADEMICA.md`](./FUNDAMENTACAO_ACADEMICA.md).
-
-BEORYS™ is built around closing that gap. The means by which it does so are not
-disclosed in this repository.
-
-## Existence of further work
-
-A complete book and an accompanying professional toolkit already exist as
-finished, governed works. **Neither has been published or released.** Their
-publication, and any associated registrations, will follow this public record. No
-part of either work — its text, its structure, or its operational content — is
-included here.
-
-## Authorship
-
-**Roberta Sarra España** — author and originator of BEORYS™.
+A ausência desses itens é **deliberada** — ver [TRADE_SECRET.md](./TRADE_SECRET.md).
 
 ---
 
-## Licença / License
+## Como citar
 
-© 2026 Roberta Sarra España. Todos os direitos reservados / All rights reserved.
-Ver / see [`LICENSE`](./LICENSE).
+```
+España, Roberta Sarra. BEORYS™: Metodologia de Controle Epistêmico de LLMs.
+Registro público de autoria e prioridade. 2026.
+https://github.com/robertasarra/beorys-method
+```
 
-**"BEORYS"** e **"BEORYS™"** são reivindicadas como marcas de Roberta Sarra
-España. / **"BEORYS"** and **"BEORYS™"** are claimed as trademarks of Roberta
-Sarra España.
+Formato CITATION.cff: [CITATION.cff](./CITATION.cff)
 
+---
+
+## Integridade e auditoria
+
+Os documentos públicos são cobertos por registro SHA-256 em [integrity/SHA256_REGISTRY.md](./SHA256_REGISTRY.md). Um hash-mestre privado do run v0.2 foi gerado e está em custódia da titular para eventual auditoria independente sob NDA. Política completa: [integrity/HASH_POLICY.md](./HASH_POLICY.md).
+
+---
+
+## Contato
+
+Roberta Sarra España — titular exclusiva de todos os direitos sobre BEORYS™.
+Para licenciamento, auditoria ou parceria: conforme [NOTICE.md](./NOTICE.md).
+
+---
+
+*Versão pública: 1.0.0 — 2026-06-06*
+*Todos os direitos reservados. Nenhuma licença de uso da metodologia é concedida por este repositório.*
