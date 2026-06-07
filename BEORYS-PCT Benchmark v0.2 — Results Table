@@ -1,20 +1,13 @@
-# BEORYS-PCT Benchmark v0.2 — Results Table
+# BEORYS-PCT v0.2 — Tabela de Resultados Agregados
 
-| | |
-|---|---|
-| **Work** | BEORYS™ |
-| **Author** | Roberta Sarra España |
-| **Run** | BEORYS-PCT Benchmark v0.2 — 2026-06-06 |
-| **Scope** | 5 models · 100 cases · 7 categories · 2,500 executions · groups A–E |
-| **Boundary** | Official aggregate results. No implementation disclosed — see [`../../TRADE_SECRET.md`](../../TRADE_SECRET.md). |
-
-> Groups: **A** Prose · **B** Checklist · **C** Self-reflection ·
-> **D** Executor + LLM-validator · **E** BEORYS™ gate + external lock.
-> A dash (—) means the metric does not apply to that group.
+**Benchmark:** BEORYS Protocol Compliance Test v0.2  
+**Data:** 2026-06-06  
+**Escopo:** 5 modelos, 100 casos, 7 categorias, 2.500 execuções  
+**Titular:** Roberta Sarra España
 
 ---
 
-## Aggregate metrics
+## Tabela principal — métricas por grupo de instrução
 
 | Metric | A (Prose) | B (Checklist) | C (Self-reflection) | D (Executor + LLM-validator) | E (BEORYS™) |
 |---|---:|---:|---:|---:|---:|
@@ -31,27 +24,27 @@
 
 ---
 
-## Comparative Findings
+## Notas de interpretação
 
-| Finding | Result |
-|---|---|
-| BEORYS™ outperformed prose in raw compliance | NO |
-| BEORYS™ matched prose in raw compliance | YES |
-| BEORYS™ had the highest trigger activation | YES |
-| BEORYS™ had the lowest unauthorized output | YES |
-| BEORYS™ had the highest auditability score | YES |
-| BEORYS™ avoided the LLM-validator false-pass mode | YES |
+1. **Protocol Compliance Rate** mede conformidade estrutural com o protocolo canônico, não veracidade factual das afirmações.
 
----
+2. **Trigger Activation Rate** é a métrica que distingue funcionalmente o Grupo E dos demais. Um Trigger Activation Rate de 93% (E) vs. 2–23% (A–D) indica que o gate BEORYS™ ativa a verificação na esmagadora maioria dos casos — enquanto os demais métodos deixam a maior parte das afirmações sem verificação ativada.
 
-## Reading
+3. **External Gate Block Rate (Grupo E — 6%)** representa o volume de outputs rejeitados pelo gate determinístico antes de serem emitidos. Esses bloqueios são a evidência de funcionamento fail-closed: saídas não conformes nunca chegam ao receptor.
 
-Raw first-output compliance converges across all groups; the difference that matters
-appears in trigger activation, unauthorized output, false-pass avoidance and
-auditability. These figures are aggregate evidence **for this run under the measured
-conditions** and do not constitute universal proof — see
-[`BEORYS_PCT_v0.2_LIMITATIONS.md`](./BEORYS_PCT_v0.2_LIMITATIONS.md).
+4. **Auditability Score** reflete a rastreabilidade e verificabilidade da cadeia decisória, não apenas o resultado final.
+
+5. **Métricas marcadas com —** não se aplicam ao grupo em questão por design do método.
 
 ---
 
-© 2026 Roberta Sarra España — BEORYS™. See [`LICENSE`](../../LICENSE).
+## Advertências
+
+- Estes são resultados **agregados** de uma execução (v0.2, 2026-06-06). Não extrapolam automaticamente para outros domínios, conjuntos de tarefas ou modelos.
+- Os dados individuais por modelo, por caso e por execução são evidência bruta protegida — ver [(BEORYS-PCT Benchmark v0.2 — Evidence Checklist.md)]((./BEORYS-PCT Benchmark v0.2 — Evidence Checklist.md)).
+- Para limitações completas, ver [(BEORYS-PCT Benchmark v0.2 — Limitations.md)]((./BEORYS-PCT Benchmark v0.2 — Limitations.md)).
+
+---
+
+*Todos os direitos reservados. BEORYS™ é marca de Roberta Sarra España.*  
+*Citação autorizada com atribuição: Roberta Sarra España, BEORYS-PCT v0.2, 2026.*
