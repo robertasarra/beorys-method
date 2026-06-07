@@ -1,4 +1,4 @@
-# (TRADE_SECRET.md) — Fronteira de Segredo Industrial
+# TRADE_SECRET — Fronteira de Segredo Industrial
 
 **BEORYS™** | Titular: Roberta Sarra España | Versão pública: 1.0.0 — 2026-06-06
 
@@ -10,15 +10,15 @@ Os seguintes elementos estão deliberadamente tornados públicos como registro d
 
 | Elemento público | Localização |
 |---|---|
-| Declaração de autoria e prioridade | (../claims/CLAIM-001.md) |
-| Princípio fundador ("fluência pode redigir; não pode autorizar") | (../README.md), (../claims/CLAIM-001.md) |
-| Tese técnica de alto nível (separação produção/autorização) | (../README.md), (../claims/CLAIM-001.md) |
-| Fundamentação acadêmica curada com DOIs verificados | (../literature/FUNDAMENTACAO_ACADEMICA.md) |
-| Resultados agregados autorizados do BEORYS-PCT v0.2 | docs/benchma(../benchmark/(../benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md)) |
-| Declaração de método (alto nível, sem implementação) | docs/benchma(../benchmark/(../benchmark/BEORYS_PCT_v0.2_METHOD.md)) |
-| Limitações declaradas do benchmark | docs/benchma(../benchmark/(../benchmark/BEORYS_PCT_v0.2_LIMITATIONS.md)) |
-| Declaração de reprodutibilidade parcial | docs/benchma(../benchmark/(../benchmark/BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md)) |
-| Registro de integridade SHA-256 dos documentos públicos | integri(../integrity/(../integrity/SHA256_REGISTRY.md)) |
+| Declaração de autoria e prioridade | [CLAIM-001.md](../claims/CLAIM-001.md) |
+| Princípio fundador ("fluência pode redigir; não pode autorizar") | [README.md](../README.md), [CLAIM-001.md](../claims/CLAIM-001.md) |
+| Tese técnica de alto nível (separação produção/autorização) | [README.md](../README.md), [CLAIM-001.md](../claims/CLAIM-001.md) |
+| Fundamentação acadêmica curada com DOIs verificados | [FUNDAMENTACAO_ACADEMICA.md](../literature/FUNDAMENTACAO_ACADEMICA.md) |
+| Resultados agregados autorizados do BEORYS-PCT v0.2 | [BEORYS_PCT_v0.2_RESULTS_TABLE.md](../benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md) |
+| Declaração de método (alto nível, sem implementação) | [BEORYS_PCT_v0.2_METHOD.md](../benchmark/BEORYS_PCT_v0.2_METHOD.md) |
+| Limitações declaradas do benchmark | [BEORYS_PCT_v0.2_LIMITATIONS.md](../benchmark/BEORYS_PCT_v0.2_LIMITATIONS.md) |
+| Declaração de reprodutibilidade parcial | [BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md](../benchmark/BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md) |
+| Registro de integridade SHA-256 dos documentos públicos | [SHA256_REGISTRY.md](../integrity/SHA256_REGISTRY.md) |
 
 ---
 
@@ -50,7 +50,7 @@ Os seguintes números **podem ser citados publicamente** com a atribuição corr
 - **7 categorias** de tarefas
 - **2.500 execuções** totais
 - **Grupos A–E** de métodos de instrução comparados
-- Tabela de métricas agregadas em `docs/benchma(../benchmark/(../benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md))`
+- Tabela de métricas agregadas em `benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md`
 
 Qualquer dado mais granular (por caso, por modelo, por saída) é evidência bruta protegida.
 
