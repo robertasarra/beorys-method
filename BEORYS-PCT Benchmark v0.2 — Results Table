@@ -1,0 +1,57 @@
+# BEORYS-PCT Benchmark v0.2 — Results Table
+
+| | |
+|---|---|
+| **Work** | BEORYS™ |
+| **Author** | Roberta Sarra España |
+| **Run** | BEORYS-PCT Benchmark v0.2 — 2026-06-06 |
+| **Scope** | 5 models · 100 cases · 7 categories · 2,500 executions · groups A–E |
+| **Boundary** | Official aggregate results. No implementation disclosed — see [`../../TRADE_SECRET.md`](../../TRADE_SECRET.md). |
+
+> Groups: **A** Prose · **B** Checklist · **C** Self-reflection ·
+> **D** Executor + LLM-validator · **E** BEORYS™ gate + external lock.
+> A dash (—) means the metric does not apply to that group.
+
+---
+
+## Aggregate metrics
+
+| Metric | A (Prose) | B (Checklist) | C (Self-reflection) | D (Executor + LLM-validator) | E (BEORYS™) |
+|---|---:|---:|---:|---:|---:|
+| Protocol Compliance Rate | 95% | 93% | 92% | 93% | 95% |
+| Trigger Activation Rate | 2% | 23% | 23% | 2% | 93% |
+| Factual Assertion Detection Rate | 71% | 72% | 75% | 73% | 71% |
+| Evidence Attachment Rate | 95% | 87% | 93% | 94% | 99% |
+| Unauthorized Output Rate | 3% | 6% | 5% | 5% | 2% |
+| Self-Correction Failure Rate | 0% | 1% | 3% | 0% | 4% |
+| External Gate Block Rate | — | — | — | — | 6% |
+| False Pass Rate | — | — | — | 2% | — |
+| Recovery Rate | — | — | — | — | 89% |
+| Auditability Score | 0.60 | 0.64 | 0.66 | 0.61 | 0.83 |
+
+---
+
+## Comparative Findings
+
+| Finding | Result |
+|---|---|
+| BEORYS™ outperformed prose in raw compliance | NO |
+| BEORYS™ matched prose in raw compliance | YES |
+| BEORYS™ had the highest trigger activation | YES |
+| BEORYS™ had the lowest unauthorized output | YES |
+| BEORYS™ had the highest auditability score | YES |
+| BEORYS™ avoided the LLM-validator false-pass mode | YES |
+
+---
+
+## Reading
+
+Raw first-output compliance converges across all groups; the difference that matters
+appears in trigger activation, unauthorized output, false-pass avoidance and
+auditability. These figures are aggregate evidence **for this run under the measured
+conditions** and do not constitute universal proof — see
+[`BEORYS_PCT_v0.2_LIMITATIONS.md`](./BEORYS_PCT_v0.2_LIMITATIONS.md).
+
+---
+
+© 2026 Roberta Sarra España — BEORYS™. See [`LICENSE`](../../LICENSE).
