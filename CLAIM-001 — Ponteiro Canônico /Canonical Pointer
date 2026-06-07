@@ -1,0 +1,41 @@
+# CLAIM-001 — Ponteiro Canônico / Canonical Pointer
+
+| | |
+|---|---|
+| **Obra / Work** | BEORYS™ |
+| **Autora / Author** | Roberta Sarra España |
+| **Registro público / Public record** | 2026-06-06 |
+
+---
+
+# 🇧🇷 Português
+
+A **Declaração de Autoria e Prioridade (CLAIM-001)** é mantida em **um único lugar
+canônico**, na raiz do repositório, para evitar divergência entre cópias:
+
+➡️ **[`../../CLAIM-001.md`](../../CLAIM-001.md)** *(versão canônica — PT + EN)*
+
+Este arquivo existe apenas como **ponteiro** dentro de `docs/claims/`. Ele **não**
+duplica o conteúdo: qualquer atualização da declaração é feita somente no arquivo
+canônico da raiz. Em caso de qualquer diferença aparente, **prevalece a versão da
+raiz**.
+
+Identificador da declaração: **CLAIM-001** (ver também
+[`../../CITATION.cff`](../../CITATION.cff)).
+
+---
+
+# 🌎 English (short version)
+
+The **Authorship and Priority Declaration (CLAIM-001)** is kept in a **single
+canonical location** at the repository root to prevent divergence between copies:
+
+➡️ **[`../../CLAIM-001.md`](../../CLAIM-001.md)** *(canonical version — PT + EN)*
+
+This file is only a **pointer** inside `docs/claims/`; it does **not** duplicate the
+content. Any update to the declaration is made solely in the canonical root file. If
+any apparent difference arises, **the root version prevails**.
+
+---
+
+© 2026 Roberta Sarra España — BEORYS™. Ver [`LICENSE`](../../LICENSE).
