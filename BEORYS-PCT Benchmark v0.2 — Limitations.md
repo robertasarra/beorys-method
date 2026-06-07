@@ -1,63 +1,70 @@
-# BEORYS-PCT Benchmark v0.2 — Limitations
+# BEORYS-PCT v0.2 — Limitações Declaradas
 
-| | |
-|---|---|
-| **Work** | BEORYS™ |
-| **Author** | Roberta Sarra España |
-| **Run** | BEORYS-PCT Benchmark v0.2 — 2026-06-06 |
-| **Boundary** | Public limitations record. No implementation disclosed — see [`../../TRADE_SECRET.md`](../../TRADE_SECRET.md). |
+**Benchmark:** BEORYS Protocol Compliance Test v0.2  
+**Data:** 2026-06-06  
+**Titular:** Roberta Sarra España
 
 ---
 
-> **Mandatory statement.** The BEORYS-PCT Benchmark v0.2 provides empirical evidence
-> under the measured conditions. It does not constitute universal proof of
-> effectiveness across all models, domains or future systems.
+## Princípio de transparência
 
-## 1. Scope of Evidence
-
-The evidence describes **one specific run** (5 models, 100 cases, 2,500 executions, on
-the stated date). It characterizes the measured conditions and does not automatically
-generalize beyond them.
-
-## 2. Model Scope
-
-Five models were evaluated. Results may differ for other models, other versions of the
-same models, or different decoding settings.
-
-## 3. Dataset Scope
-
-100 test cases across 7 categories. Other tasks, domains, languages or constraint
-types may yield different distributions. The full dataset is protected.
-
-## 4. Replication Limits
-
-Public replication is **partial** by design: aggregate method and results are public,
-while prompts, dataset and gate implementation are withheld. See
-[`BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md`](./BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md).
-
-## 5. Statistical Limits
-
-The reported figures are **aggregate** values for this run. No claim is made about
-significance testing, confidence intervals or variance beyond the published
-aggregates.
-
-## 6. Disclosure Limits
-
-To protect the trade secret, internal mechanisms are not described. Readers cannot,
-from this record alone, reconstruct the gate, the blocking criteria or the prompts.
-
-## 7. Interpretation Limits
-
-The results are **consistent with** the hypothesis under the measured conditions; they
-should not be read as definitive proof, nor as a guarantee of behavior in unseen
-settings.
-
-## 8. Future Validation
-
-Further runs — with additional models, larger and more varied datasets, and
-independent judges — may **strengthen, qualify or adjust** these conclusions. A future
-independent audit path is described in the reproducibility statement.
+O BEORYS™ assume que declarar limitações é parte integral do método — não uma concessão retórica. Esta lista é exaustiva no que se refere ao registro público desta versão.
 
 ---
 
-© 2026 Roberta Sarra España — BEORYS™. See [`LICENSE`](../../LICENSE).
+## Limitações
+
+### 1. Não é prova universal
+
+Os resultados do BEORYS-PCT v0.2 foram obtidos em condições específicas (5 modelos, 100 casos, 7 categorias, 1 run). Eles não constituem prova de que o Grupo E (BEORYS™) supera os demais métodos em:
+- outros domínios de aplicação
+- outros conjuntos de tarefas
+- outros modelos de linguagem
+- outras configurações de temperatura ou parâmetros
+- outras línguas ou culturas de uso
+
+---
+
+### 2. Escopo limitado a um run
+
+O BEORYS-PCT v0.2 é um único run executado em 2026-06-06. Sem repetição em múltiplas datas, os resultados não permitem afirmação sobre estabilidade temporal dos achados.
+
+---
+
+### 3. Sem generalização automática
+
+A diferença observada entre grupos (especialmente Trigger Activation Rate: 2% em A vs. 93% em E) é válida dentro do escopo declarado. Qualquer generalização para além desse escopo é responsabilidade de quem a fizer — não da titular.
+
+---
+
+### 4. Sem significância estatística publicada
+
+Esta versão não publica análise de significância estatística das diferenças entre grupos. A ausência desta análise é intencional na publicação atual e não implica que a diferença seja insignificante.
+
+---
+
+### 5. Reprodutibilidade pública parcial por design
+
+A reprodução integral do experimento requer acesso ao dataset, prompts e verificador protegidos — que são segredo industrial. A reprodutibilidade pública é, portanto, parcialmente limitada por decisão deliberada. Ver [(BEORYS-PCT Benchmark v0.2 — Reproducibility Statement.md)]((./BEORYS-PCT Benchmark v0.2 — Reproducibility Statement.md)).
+
+---
+
+### 6. Compliance estrutural ≠ veracidade factual
+
+O benchmark mede **compliance estrutural de protocolo** contra verdade-base das tarefas — ou seja, se o modelo seguiu a estrutura exigida e não marcou como verificado o que não tinha evidência. Não mede a veracidade de afirmações factuais que o modelo possa inventar livremente dentro da estrutura correta. Detectar fabricação semântica de evidência é escopo para versões futuras.
+
+---
+
+### 7. Necessidade de auditoria independente futura
+
+Para que os resultados ganhem status de evidência verificada externamente, é necessária auditoria independente por pesquisador ou entidade qualificada com acesso às evidências brutas sob NDA. Esta auditoria ainda não foi realizada na data de publicação deste documento.
+
+---
+
+### 8. Modelos em evolução
+
+Os 5 modelos avaliados foram versões disponíveis em 2026-06-06. Modelos são continuamente atualizados por seus desenvolvedores; resultados para versões futuras dos mesmos modelos podem diferir.
+
+---
+
+*Todos os direitos reservados. BEORYS™ é marca de Roberta Sarra España.*
