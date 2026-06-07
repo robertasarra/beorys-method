@@ -1,65 +1,72 @@
-# SHA256_REGISTRY — Registro de Integridade - Integrity Registry
+# SHA256_REGISTRY — Registro de Integridade / Integrity Registry
 
-| | |
-|---|---|
-| **Obra / Work** | BEORYS™ |
-| **Autora / Author** | Roberta Sarra España |
-| **Versão do registro / Record version** | 1.0.2 |
-| **Recomputado em / Recomputed** | 2026-06-06 23:57:43 -03 |
-| **Algoritmo / Algorithm** | SHA-256 |
-
-> Registro corrente dos hashes dos documentos públicos canônicos. Política em
-> [`HASH_POLICY.md`](./HASH_POLICY.md). Recalculado a cada versão do
-> [`CHANGELOG.md`](../CHANGELOG.md). O próprio `SHA256_REGISTRY.md` não se
-> auto-inclui.
+**BEORYS™** — Metodologia de Controle Epistêmico de LLMs  
+**Titular:** Roberta Sarra España  
+**Data de anterioridade:** 2026-06-06  
+**Versão do registro:** 1.0.0
 
 ---
 
-## 1. Documentos públicos canônicos
+## Política de integridade
+
+Ver [(HASH_POLICY — Política de Integridade - Integrity Policy.md)]((./HASH_POLICY — Política de Integridade - Integrity Policy.md)) para descrição completa da política.
+
+**Algoritmo:** SHA-256  
+**Escopo:** Documentos públicos listados abaixo.  
+**Nota:** Os hashes registrados aqui são os hashes **correntes** dos arquivos públicos neste repositório. Documentos privados (prompts, scripts, dataset, lógica de gate) são cobertos por hash-mestre separado, custodiado pela titular.
+
+---
+
+## Documentos públicos — hashes verificáveis
 
 | Arquivo | SHA-256 |
 |---|---|
-| `CHANGELOG.md` | `1a946200a71853e68c793e526031485f348be30d21e0cd08ac46752034063d71` |
-| `CITATION.cff` | `29bfa72c74949a897669a78ade9bcb5b2cfbc8222f599b324952e6124cd5935b` |
-| `CLAIM-001.md` | `ee7a8e4532710df90568825416d72aa21aeac23d11c6e1c2708acae8bd483146` |
-| `FUNDAMENTACAO_ACADEMICA.md` | `c7e1cdade81450f75b0f0d51ce22c2073d08a8ae1d188eaa7a9862fcbde8822a` |
-| `LICENSE` | `ff5610fcf7b26bf8a5ed3eccaf21e438d812c68cba2ed5f2fe5af438bd336f8a` |
-| `NOTICE.md` | `c9e60720d7c221c704253595142ec76ce5a03e087c28d7d0aa4c8925166a99d6` |
-| `README.md` | `ad4f83ad35bd792efc5fd41a82d8f6e87f179dd90b244ecabfec6a90336268ef` |
-| `TRADE_SECRET.md` | `f6657b13112e2aad400e8ee703d3e112c960c2589d015a8cab8695b96b562c61` |
-| `docs/benchmark/BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md` | `f5b12e9e2cea3a762e7ce9b936903d6bba052e6c2ac3900f1506c523ab20fe45` |
-| `docs/benchmark/BEORYS_PCT_v0.2_LIMITATIONS.md` | `c5f7d3a4a1e863773b5b2c0c62d0932644a5bfa116d16808ab684b056133af9d` |
-| `docs/benchmark/BEORYS_PCT_v0.2_METHOD.md` | `4f045d1454100fe80e116c28f114f407406b559036019c0da7988ec38ca652bb` |
-| `docs/benchmark/BEORYS_PCT_v0.2_PUBLIC_SUMMARY.md` | `7fc9af5157e21e7c78977366f1e0d5714df006614c2fa5f780e131419bf1bcd1` |
-| `docs/benchmark/BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md` | `166e15f68b3e551d92592095b80dc6585504ab273796a9037650e40a5d55d60e` |
-| `docs/benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md` | `ed53e35bca012a739cae95b9f8d499029c8d11e1b82731059e64d9e0e43e6be4` |
-| `docs/benchmark/BEORYS_PCT_v0.2_SUMMARY.md` | `cac0fce6d2ca8792348f7009f7fdb08c02e6bc2d6c336c0bb9dc0a61c505561e` |
-| `docs/benchmark/BEORYS_PCT_v0.2_VALIDATION_REPORT.md` | `1f5cccd51efd6f56a1806721a2e0814434f10e4da10dd23c1ef7e77c847670cf` |
-| `docs/claims/CLAIM-001.md` | `d42002d2fb32a50a92797f2382781874747f092c47a3ff0b9be2b479f943bff5` |
-| `docs/literature/LITERATURE_MAP.md` | `6b6605f209faf9c41204d8e189fbcdef3a34685965bfdcc695d63240c30b3e80` |
-| `docs/literature/REFERENCES.md` | `f3ed4669aa6220c18743bb098def098e91c337b3fef22b68a7fc1f4a86d32938` |
-| `integrity/HASH_POLICY.md` | `500ee4dbea90d4e873058aad363d3826577ad8f04497f16f27eef8844c739935` |
-| `integrity/RELEASE_INTEGRITY.md` | `077e34203db32f4ba50544380e02032c026d841ac10c9d139db0eca61cf12baa` |
-
-## 2. Benchmark v0.2 — hash-mestre (fonte bruta de uso controlado)
-
-A fonte bruta do run v0.2 (**não** publicada — ver
-[`../TRADE_SECRET.md`](../TRADE_SECRET.md)) é selada por um hash-mestre SHA-256, que
-fixa publicamente a sua existência e forma exata sem revelar conteúdo:
-
-| Item | SHA-256 |
-|---|---|
-| Hash-mestre do run v0.2 (manifesto `SHA256SUMS.txt`, 5.533 arquivos) | `ebfc9db96869484987f165ab74f515fa76600b945e6dc5852f9c77aa273d56f2` |
-
-## 3. Como verificar / How to verify
-
-```
-# a partir desta pasta (registro-publico-beorys/):
-sha256sum CLAIM-001.md   # compare com a linha correspondente acima
-```
-
-Qualquer divergência indica que o arquivo foi alterado após o registro.
+| `README.md` | `35c256546a3de7420078bd58b3de7350182deef1542d2789011fefb9f47f5532` |
+| `(CLAIM-001 — Ponteiro Canônico /Canonical Pointer)` | `7b2bf7c7e211cffaf54cabe42c224143c212522a618267e26aa4696141b74ada` |
+| `(Fundamentação acadêmica — BEORYS™.md)` | `dda97785d9d29001c2c51a756d8731ce48ce94f40134b54fb6444d082ffe02fc` |
+| `CITATION.cff` | `199d491e440b557d9bed0805accf6cbcc0b2cdaae9b73be71ed8c51ec6b37c74` |
+| `(LICENSE.md)` | `a77da0521edad05bb806a19ef86410bbf31ddc8b90d89349f81aa16de229b7a1` |
+| `(# NOTICE — BEORYS™.md)` | `03750a3af1e43d0eb73489b133f4752d0f27a98cdadb3d47206386bd73658eea` |
+| `(CHANGELOG — Registro público BEORYS™.md)` | `a12e2649f2fcdfa6aa11cc76bcc3e08ee443ac5693ed4ef9f4e1b81c10098705` |
+| `(TRADE_SECRET — Delimitação de Segredo Industrial - Trade-Secret Boundary,md)` | `d6c8d4911233af08ba913b3eb3ed8ae00307d44821d19d8ec34a91026fc39200` |
+| `(BEORYS-PCT Benchmark v0.2 — Method)` | `cb6bbecb39eb588b0cd6c2e155a702fda378e821a47d9ea579537075363d2a8c` |
+| `(BEORYS-PCT Benchmark v0.2 — Results Table)` | `11427c17e90dc5025d88472a8ae107557abc11a5c589f76ae4645b0313f5473f` |
+| `(BEORYS-PCT Benchmark v0.2 — Validation Report)` | `e84fd65338d96001e9602b04fcd0731d895b0a3c4fb8f5cb2855ff81a7a882e7` |
+| `(BEORYS-PCT Benchmark v0.2 — Evidence Checklist.md)` | `92530d61d12322299e164bf7e5ac4cbe30043b4027a63e4750116a79cdca619e` |
+| `(BEORYS-PCT Benchmark v0.2 — Limitations.md)` | `9a269298a5b263af41baf22eeccef56e6e1d8a3d42217c797c936d5952e34a45` |
+| `(BEORYS-PCT Benchmark v0.2 — Reproducibility Statement.md)` | `be4ecc7146269cbd3685216c835527b978b3de1233306d3ca48f27c8a4ba20c6` |
+| `(BEORYS-PCT Benchmark v0.2 — Public Summary)` | `c914aac423e67761514f4e3bc7c87efab2b0fa4f9162700376db51210859f19e` |
+| `(BEORYS-PCT Benchmark v0.2 — Resumo Agregado - Aggregate Summary  Aggregate Summary.md)` | `bada8fbae3287ef8ca9109ad75bbe112d783148e009a230c2ddc32e5a4b188a1` |
+| `(REFERENCES — Referências Acadêmicas - Academic References.md)` | `ab71fbff0906b3250a543148977daee49abaa58b43fd002b405f5fffbfcbf79d` |
+| `(LITERATURE_MAP — Mapa Literatura → Hipótese - iterature → Hypothesis Map.md Literature → Hypothesis Map.md)` | `9f828eff1e0ff64239aa5b09db69b683c3fa0377b624af00a5cddd95aadf5b7b` |
+| `(HASH_POLICY — Política de Integridade - Integrity Policy.md)` | `0561010a09339739e1e5988a2d668720f3cda9e168c19d3466d132bf022ffe2c` |
+| `(RELEASE_INTEGRITY — Integridade de Release -Release Integrity)` | `132884233dfa4a4ccd400ceaa5052b3568ca175325dba4120ea268404eea4d2f` |
 
 ---
 
-© 2026 Roberta Sarra España — BEORYS™. Ver [`LICENSE`](../LICENSE).
+## Hash-mestre privado — BEORYS-PCT v0.2
+
+O hash-mestre do pacote privado completo (prompts, scripts, dataset, lógica de gate) é custodiado exclusivamente pela titular e não é publicado neste repositório.
+
+**Referência:** a fornecer pela titular em instância de verificação formal.
+
+---
+
+## Verificação
+
+Para verificar qualquer arquivo listado acima:
+
+```bash
+shasum -a 256 <nome-do-arquivo>
+```
+
+O hash retornado deve corresponder ao valor registrado na tabela acima.
+
+---
+
+## Aviso
+
+Este registro documenta a integridade dos documentos públicos no momento do commit.  
+Qualquer divergência entre o hash calculado e o registrado indica que o arquivo foi alterado após a publicação.
+
+**© 2026 Roberta Sarra España — Todos os direitos reservados**
