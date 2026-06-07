@@ -23,41 +23,40 @@ Este repositório **não é um pacote reprodutível de implementação.** É um 
 ### Autoria e reivindicação
 | Documento | Descrição |
 |---|---|
-| [CLAIM-001.md](./CLAIM-001.md) | Declaração pública de autoria e prioridade |
-| [docs/claims/CLAIM-001.md](./CLAIM-001.md) | Cópia canônica em docs/ |
+| [CLAIM-001.md](claims/CLAIM-001.md) | Declaração pública de autoria e prioridade |
 
 ### Metodologia e benchmark
 | Documento | Descrição |
 |---|---|
-| [docs/benchmark/BEORYS_PCT_v0.2_PUBLIC_SUMMARY.md](./BEORYS_PCT_v0.2_PUBLIC_SUMMARY.md) | Sumário público do benchmark |
-| [docs/benchmark/BEORYS_PCT_v0.2_SUMMARY.md](./BEORYS_PCT_v0.2_SUMMARY.md) | Sumário executivo |
-| [docs/benchmark/BEORYS_PCT_v0.2_METHOD.md](./BEORYS_PCT_v0.2_METHOD.md) | Declaração do método (alto nível) |
-| [docs/benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md](./BEORYS_PCT_v0.2_RESULTS_TABLE.md) | Tabela de resultados agregados |
-| [docs/benchmark/BEORYS_PCT_v0.2_VALIDATION_REPORT.md](./BEORYS_PCT_v0.2_VALIDATION_REPORT.md) | Relatório de validação pública |
-| [docs/benchmark/BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md](./BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md) | Checklist de evidência pública vs. protegida |
-| [docs/benchmark/BEORYS_PCT_v0.2_LIMITATIONS.md](./BEORYS_PCT_v0.2_LIMITATIONS.md) | Limitações declaradas |
-| [docs/benchmark/BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md](./BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md) | Declaração de reprodutibilidade |
+| [BEORYS_PCT_v0.2_PUBLIC_SUMMARY.md](benchmark/BEORYS_PCT_v0.2_PUBLIC_SUMMARY.md) | Sumário público do benchmark |
+| [BEORYS_PCT_v0.2_AGGREGATE_SUMMARY.md](benchmark/BEORYS_PCT_v0.2_AGGREGATE_SUMMARY.md) | Sumário executivo agregado |
+| [BEORYS_PCT_v0.2_METHOD.md](benchmark/BEORYS_PCT_v0.2_METHOD.md) | Declaração do método (alto nível) |
+| [BEORYS_PCT_v0.2_RESULTS_TABLE.md](benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md) | Tabela de resultados agregados |
+| [BEORYS_PCT_v0.2_VALIDATION_REPORT.md](benchmark/BEORYS_PCT_v0.2_VALIDATION_REPORT.md) | Relatório de validação pública |
+| [BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md](benchmark/BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md) | Checklist de evidência pública vs. protegida |
+| [BEORYS_PCT_v0.2_LIMITATIONS.md](benchmark/BEORYS_PCT_v0.2_LIMITATIONS.md) | Limitações declaradas |
+| [BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md](benchmark/BEORYS_PCT_v0.2_REPRODUCIBILITY_STATEMENT.md) | Declaração de reprodutibilidade |
 
 ### Fundamentação acadêmica
 | Documento | Descrição |
 |---|---|
-| [FUNDAMENTACAO_ACADEMICA.md](./FUNDAMENTACAO_ACADEMICA.md) | Embasamento em literatura revisada |
-| [docs/literature/REFERENCES.md](./REFERENCES.md) | Lista de referências verificadas |
-| [docs/literature/LITERATURE_MAP.md](./LITERATURE_MAP.md) | Mapa afirmação → fonte |
+| [FUNDAMENTACAO_ACADEMICA.md](literature/FUNDAMENTACAO_ACADEMICA.md) | Embasamento em literatura revisada |
+| [REFERENCES.md](literature/REFERENCES.md) | Lista de referências verificadas |
+| [LITERATURE_MAP.md](literature/LITERATURE_MAP.md) | Mapa afirmação → fonte |
 
 ### Segredo industrial e licença
 | Documento | Descrição |
 |---|---|
-| [TRADE_SECRET.md](./TRADE_SECRET.md) | Fronteira entre público e protegido |
-| [NOTICE.md](./NOTICE.md) | Todos os direitos reservados |
-| [LICENSE](./LICENSE) | Termos de uso do repositório público |
+| [TRADE_SECRET.md](legal/TRADE_SECRET.md) | Fronteira entre público e protegido |
+| [NOTICE.md](NOTICE.md) | Todos os direitos reservados |
+| [LICENSE.md](LICENSE.md) | Termos de uso do repositório público |
 
 ### Integridade documental
 | Documento | Descrição |
 |---|---|
-| [integrity/HASH_POLICY.md](./HASH_POLICY.md) | Política de hashes SHA-256 |
-| [integrity/SHA256_REGISTRY.md](./SHA256_REGISTRY.md) | Registro de hashes dos documentos públicos |
-| [integrity/RELEASE_INTEGRITY.md](./RELEASE_INTEGRITY.md) | Declaração de integridade desta versão |
+| [HASH_POLICY.md](integrity/HASH_POLICY.md) | Política de hashes SHA-256 |
+| [SHA256_REGISTRY.md](integrity/SHA256_REGISTRY.md) | Registro de hashes dos documentos públicos |
+| [RELEASE_INTEGRITY.md](integrity/RELEASE_INTEGRITY.md) | Declaração de integridade desta versão |
 
 ---
 
@@ -73,7 +72,7 @@ Benchmark comparativo entre 5 grupos de instrução (A a E), medindo compliance 
 | D — Executor + LLM-validador | 2% | 0.61 |
 | **E — BEORYS™** | **93%** | **0.83** |
 
-Tabela completa: [docs/benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md](./BEORYS_PCT_v0.2_RESULTS_TABLE.md)
+Tabela completa: [BEORYS_PCT_v0.2_RESULTS_TABLE.md](benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md)
 
 ---
 
@@ -87,7 +86,7 @@ Tabela completa: [docs/benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md](./BEORYS_PCT_
 - Toolkit profissional ou qualquer material de implementação
 - Capítulos do livro ou termos comerciais
 
-A ausência desses itens é **deliberada** — ver [TRADE_SECRET.md](./TRADE_SECRET.md).
+A ausência desses itens é **deliberada** — ver [TRADE_SECRET.md](legal/TRADE_SECRET.md).
 
 ---
 
@@ -99,22 +98,22 @@ Registro público de autoria e prioridade. 2026.
 https://github.com/robertasarra/beorys-method
 ```
 
-Formato CITATION.cff: [CITATION.cff](./CITATION.cff)
+Formato estruturado: [CITATION.cff](CITATION.cff)
 
 ---
 
 ## Integridade e auditoria
 
-Os documentos públicos são cobertos por registro SHA-256 em [integrity/SHA256_REGISTRY.md](./SHA256_REGISTRY.md). Um hash-mestre privado do run v0.2 foi gerado e está em custódia da titular para eventual auditoria independente sob NDA. Política completa: [integrity/HASH_POLICY.md](./HASH_POLICY.md).
+Os documentos públicos são cobertos por registro SHA-256 em [SHA256_REGISTRY.md](integrity/SHA256_REGISTRY.md). Um hash-mestre privado do run v0.2 foi gerado e está em custódia da titular para eventual auditoria independente sob NDA. Política completa: [HASH_POLICY.md](integrity/HASH_POLICY.md).
 
 ---
 
 ## Contato
 
 Roberta Sarra España — titular exclusiva de todos os direitos sobre BEORYS™.
-Para licenciamento, auditoria ou parceria: conforme [NOTICE.md](./NOTICE.md).
+Para licenciamento, auditoria ou parceria: conforme [NOTICE.md](NOTICE.md).
 
 ---
 
-*Versão pública: 1.0.0 — 2026-06-06*
+*Versão pública: 1.0.0 — 2026-06-06*  
 *Todos os direitos reservados. Nenhuma licença de uso da metodologia é concedida por este repositório.*
