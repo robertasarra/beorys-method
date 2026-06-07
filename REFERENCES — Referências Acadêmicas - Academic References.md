@@ -1,4 +1,4 @@
-# REFERENCES — Referências Acadêmicas / Academic References
+# REFERENCES — Referências Acadêmicas - Academic References
 
 | | |
 |---|---|
