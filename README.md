@@ -1,20 +1,38 @@
 # BEORYS™ — Registro Público de Autoria e Método
 
-**BEORYS™** é uma obra e metodologia proprietária de controle epistêmico de modelos de linguagem (LLMs), desenvolvida por Roberta Sarra España.
+**BEORYS™** é o **Plano de Controle para Trabalho com IA** (*AI Work Control Plane*) — uma obra e metodologia proprietária de **Continuidade, Autorização e Prova**, desenvolvida por Roberta Sarra España.
 
 ---
 
 ## Princípio fundador
-
 > **"A fluência pode redigir; não pode autorizar."**
 
-A tese central: o problema não é ensinar uma regra ao LLM; é obrigar que a verificação seja executada no momento correto. A solução defendida é separar produção de autorização — o LLM pode gerar, mas a autorização deve vir de verificação externa, determinística, auditável e de falha-fechada.
+A tese central: o problema não é ensinar uma regra ao LLM; é **obrigar que a verificação seja executada no momento correto**. A solução é separar **produção** de **autorização** — o LLM gera, mas a autorização vem de verificação externa, determinística, auditável e de **falha-fechada**. *Produzir ≠ autorizar.*
 
 ---
 
 ## O que é este repositório
+Registro público de autoria, prioridade, fundamentação acadêmica, resultados agregados e integridade documental. **Não é** um pacote reprodutível: implementação, prompts, critérios de bloqueio, scripts, dataset integral e lógica de gate permanecem protegidos como segredo industrial (`legal/TRADE_SECRET.md`).
 
-Este repositório **não é um pacote reprodutível de implementação.** É um registro público de autoria, prioridade, fundamentação acadêmica, resultados agregados e integridade documental. A implementação, os prompts, os critérios de bloqueio, os scripts, o dataset integral e a lógica operacional permanecem protegidos como segredo industrial.
+---
+
+## Resultados (BEORYS-PCT v0.2)
+Benchmark comparativo entre 5 grupos de instrução (A–E), **5 modelos × 100 casos × 7 categorias = 2.500 execuções** (reps = 1), em 2026-06-06.
+Modelos: `gpt-4o-mini`, `claude-haiku-4.5`, `gemini-3.5-flash`, `llama-3.3-70b-instruct`, `deepseek-chat-v3.1` (ver [MODELS](benchmark/BEORYS_PCT_v0.2_MODELS.md)).
+
+### Leia isto primeiro — qual é (e qual não é) a vantagem
+A **conformidade bruta** (Protocol Compliance) é **estatisticamente igual** entre os grupos — BEORYS™ 95% × Prosa 95% (p = 1.00). **A vantagem do BEORYS™ não é "cumprir mais"**, e sim:
+
+| Dimensão | BEORYS™ (E) | Baselines | Significância |
+|---|---:|---:|---|
+| **Trigger Activation** (a verificação dispara) | **93%** | 2–23% | z=22.4 · **p≈2×10⁻¹¹¹** |
+| **False Pass** (aprovar o inválido) | **0%** (por design) | 2% (grupo D) | modo de falha ausente em E |
+| **Unauthorized Output** (menor=melhor) | **2%** | 6% (B) | p=0.001 |
+| **Auditability** (0–1) | **0.83** | 0.60–0.66 | — |
+
+ICs 95% e testes completos: [STATISTICS](benchmark/BEORYS_PCT_v0.2_STATISTICS.md). Tabela bruta: [RESULTS_TABLE](benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md).
+
+> Em uma linha: **compliance empata; o que diferencia o BEORYS™ — com significância — é onde a verificação dispara, não aprovar o inválido e ser auditável.**
 
 ---
 
@@ -32,6 +50,8 @@ Este repositório **não é um pacote reprodutível de implementação.** É um 
 | [BEORYS_PCT_v0.2_AGGREGATE_SUMMARY.md](benchmark/BEORYS_PCT_v0.2_AGGREGATE_SUMMARY.md) | Sumário executivo agregado |
 | [BEORYS_PCT_v0.2_METHOD.md](benchmark/BEORYS_PCT_v0.2_METHOD.md) | Declaração do método (alto nível) |
 | [BEORYS_PCT_v0.2_RESULTS_TABLE.md](benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md) | Tabela de resultados agregados |
+| [BEORYS_PCT_v0.2_STATISTICS.md](benchmark/BEORYS_PCT_v0.2_STATISTICS.md) | Significância estatística e intervalos de confiança (IC95 Wilson + testes z) |
+| [BEORYS_PCT_v0.2_MODELS.md](benchmark/BEORYS_PCT_v0.2_MODELS.md) | Modelos avaliados (nomes e provedores) |
 | [BEORYS_PCT_v0.2_VALIDATION_REPORT.md](benchmark/BEORYS_PCT_v0.2_VALIDATION_REPORT.md) | Relatório de validação pública |
 | [BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md](benchmark/BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md) | Checklist de evidência pública vs. protegida |
 | [BEORYS_PCT_v0.2_LIMITATIONS.md](benchmark/BEORYS_PCT_v0.2_LIMITATIONS.md) | Limitações declaradas |
@@ -60,22 +80,6 @@ Este repositório **não é um pacote reprodutível de implementação.** É um 
 
 ---
 
-## Resultados agregados autorizados (BEORYS-PCT v0.2)
-
-Benchmark comparativo entre 5 grupos de instrução (A a E), medindo compliance de protocolo em 100 casos, 7 categorias, 2.500 execuções:
-
-| Grupo | Trigger Activation Rate | Auditability Score |
-|---|---:|---:|
-| A — Prosa | 2% | 0.60 |
-| B — Checklist | 23% | 0.64 |
-| C — Auto-reflexão | 23% | 0.66 |
-| D — Executor + LLM-validador | 2% | 0.61 |
-| **E — BEORYS™** | **93%** | **0.83** |
-
-Tabela completa: [BEORYS_PCT_v0.2_RESULTS_TABLE.md](benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md)
-
----
-
 ## O que este repositório não contém
 
 - Código-fonte de gates, validadores, pipeline ou scripts internos
@@ -90,21 +94,16 @@ A ausência desses itens é **deliberada** — ver [TRADE_SECRET.md](legal/TRADE
 
 ---
 
-## Como citar
+## Integridade e verificação
+SHA-256 de todos os documentos públicos em `integrity/SHA256_REGISTRY.md`. Hash-mestre privado do run v0.2 em custódia para auditoria independente sob NDA. *(Recomendado: ancorar o hash-mestre em OpenTimestamps para prova pública de data certa — ver roadmap v0.3.)*
 
+## Como citar
 ```
-España, Roberta Sarra. BEORYS™: Metodologia de Controle Epistêmico de LLMs.
+España, Roberta Sarra. BEORYS™: Plano de Controle para Trabalho com IA.
 Registro público de autoria e prioridade. 2026.
 https://github.com/robertasarra/beorys-method
 ```
-
-Formato estruturado: [CITATION.cff](CITATION.cff)
-
----
-
-## Integridade e auditoria
-
-Os documentos públicos são cobertos por registro SHA-256 em [SHA256_REGISTRY.md](integrity/SHA256_REGISTRY.md). Um hash-mestre privado do run v0.2 foi gerado e está em custódia da titular para eventual auditoria independente sob NDA. Política completa: [HASH_POLICY.md](integrity/HASH_POLICY.md).
+Formato estruturado: `CITATION.cff`.
 
 ---
 
@@ -114,6 +113,4 @@ Roberta Sarra España — titular exclusiva de todos os direitos sobre BEORYS™
 Para licenciamento, auditoria ou parceria: conforme [NOTICE.md](NOTICE.md).
 
 ---
-
-*Versão pública: 1.0.0 — 2026-06-06*  
-*Todos os direitos reservados. Nenhuma licença de uso da metodologia é concedida por este repositório.*
+*Versão pública: 1.1.0 (rebrand ADR-065 + estatística) — 2026-06-22 · Todos os direitos reservados.*
