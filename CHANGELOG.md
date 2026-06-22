@@ -4,6 +4,23 @@ Formato: [Versão] — Data — Descrição
 
 ---
 
+## [1.1.0] — 2026-06-22 — Estatística + rebrand
+
+### Adicionado
+- `(benchmark/BEORYS_PCT_v0.2_STATISTICS.md)` — significância estatística e intervalos de confiança (IC 95% por escore de Wilson; testes z de duas proporções). Compliance bruta empata (E 95% × Prosa 95%, p = 1.00); o diferencial — com significância — é Trigger Activation (E 93% vs. baseline 23%; z = 22.4, p ≈ 2.3 × 10⁻¹¹¹), False Pass 0% por design, Unauthorized Output (E 2% vs. B 6%; p = 0.001) e Auditability 0.83
+- `(benchmark/BEORYS_PCT_v0.2_MODELS.md)` — nomes e provedores dos 5 modelos avaliados (gpt-4o-mini, claude-haiku-4.5, gemini-3.5-flash, llama-3.3-70b-instruct, deepseek-chat-v3.1)
+
+### Alterado
+- `(README.md)` — passa a liderar pela métrica correta (compliance empata; o diferencial é onde a verificação dispara, não aprovar o inválido e auditabilidade); modelos nomeados; alinhado ao rebrand "Plano de Controle para Trabalho com IA / Continuidade · Autorização · Prova" (ADR-065)
+- `(benchmark/BEORYS_PCT_v0.2_LIMITATIONS.md)` — limitação #4 (sem significância estatística) reclassificada como **parcialmente resolvida**; estabilidade temporal segue pendente
+- `(integrity/SHA256_REGISTRY.md)` — hashes recalculados para arquivos novos e alterados
+- `(integrity/RELEASE_INTEGRITY.md)` — versão pública 1.1.0 e lista de arquivos atualizadas
+
+### Declarações
+- Nenhum segredo industrial foi incluído nesta versão: dataset, prompts, thresholds e lógica de gate permanecem protegidos
+
+---
+
 ## [1.0.0] — 2026-06-06 — Publicação inicial
 
 ### Criado

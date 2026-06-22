@@ -1,6 +1,6 @@
 # RELEASE_INTEGRITY — Declaração de Integridade desta Versão
 
-**BEORYS™** | Versão pública: 1.0.0 | Data de geração: 2026-06-06  
+**BEORYS™** | Versão pública: 1.1.0 | Data de geração: 2026-06-22  
 **Titular:** Roberta Sarra España
 
 ---
@@ -9,10 +9,11 @@
 
 | Campo | Valor |
 |---|---|
-| Versão do registro público | 1.0.0 |
-| Data de geração | 2026-06-06 |
+| Versão do registro público | 1.1.0 |
+| Data de geração | 2026-06-22 |
 | Repositório | https://github.com/robertasarra/beorys-method |
 | Benchmark referenciado | BEORYS-PCT v0.2 (execução: 2026-06-06) |
+| Mudanças nesta versão | Rebrand (ADR-065) no README; publicação de significância estatística (IC95 Wilson + testes z) e dos modelos avaliados; limitação #4 reclassificada como parcialmente resolvida |
 
 ---
 
@@ -31,6 +32,8 @@
 ### docs/benchmark/
 - `(../benchmark/BEORYS_PCT_v0.2_METHOD.md)`
 - `(../benchmark/BEORYS_PCT_v0.2_RESULTS_TABLE.md)`
+- `(../benchmark/BEORYS_PCT_v0.2_STATISTICS.md)`
+- `(../benchmark/BEORYS_PCT_v0.2_MODELS.md)`
 - `(../benchmark/BEORYS_PCT_v0.2_VALIDATION_REPORT.md)`
 - `(../benchmark/BEORYS_PCT_v0.2_EVIDENCE_CHECKLIST.md)`
 - `(../benchmark/BEORYS_PCT_v0.2_LIMITATIONS.md)`
